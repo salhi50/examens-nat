@@ -217,13 +217,13 @@ h6{/* for box (small) */
     font-size: 1rem;
 }
 .p-mid{  /* mid text */
-    font-size: 15px;
+    font-size: 13px;
 }
 .p-small{    /* small text */
-    font-size: 14px;
+    font-size: 12px;
 }
 .p-xsmall{  /* smallest text */
-    font-size: 13px;
+    font-size: 11px;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 500;
