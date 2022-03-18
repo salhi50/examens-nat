@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!-- id name: fluidTag  -->
+<html dir="ltr" lang="ar" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2BAC-SMB</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Font Awesome V4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome V5.15.4 -->    
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/correct.css"/>
+    <!-- Framwork -->
+    <link rel="stylesheet" href="css/wspace.css">
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <!-- theme-color -->
+    <meta name="theme-color" content="#0f8cfa">
+  </head>
+  <body>
+    <header class="bleu-bg pdy-15" dir="rtl">
+        <div class="container">
+          <ul class="flex flex-between fd-row-reverse align-center">
+            <li class="left-side">
+              <div class="logo"><a href="mainPage.html"><h3 class="w-color user-none" style="font-family: 'Poppins', sans-serif;">2BAC-SMB</h3></a></div>
+            </li>
+            <li class="right-side">
+              <!-- id name => sideMenu -->
+              <div class="bars-list s-hidden flex align-center justify-center cursor" id="sideMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="white" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                </svg>
+              </div>
+              <div class="links s-visible d-hidden">
+                <div class="more cursor w-color relative d-none">
+                  <div id="drop" class="user-none">
+                    <span class="mgl-4">المزيد</span>
+                    <i class="fa fa-chevron-down mgt-4" style="font-size: 12px;"></i>
+                  </div>
+                  <ul class="white-bg absolute tl-pos-initial index-3" id="dropMenu" style="display: none;">
+                    <li class="pdx-20 pdy-5"><a href="contact.html" class="text-ellipsis" style="color: #101013;">تواصل</a></li>
+                    <li class="pdx-20 pdy-5"><a href="about.html" class="text-ellipsis" style="color: #101013;">معلومات  غير مهمة</a></li>
+                  </ul>
+                </div>
+                <a href="about.html" class="w-color fw-400 d-inblock about capital pdx-15">معلومات  غير مهمة</a>
+                <a href="contact.html" class="w-color fw-400 d-inblock contact capital pdx-15">تواصل</a>
+                <a href="eleve.html" class="w-color fw-400 d-inblock capital pdx-15">قائمة التلاميذ</a>
+                <a href="exam.html" class="w-color fw-400 d-inblock capital pdx-15">الامتحانات</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="src pdy-15 pdx-10" style="background: #deeefc;" dir="rtl">
+        <div class="container">
+            <a href="mainPage.html" style="color: #131313;" class="d-inblock p-small">الرئيسية</a> / 
+            <a href="exam.html" style="color: #131313;" class="d-inblock p-small">الامتحانات</a>
+        </div>
+      </div>
+    <div id="shadowContent" class="all-pos-initial s-hidden"></div>
+    <nav id="nav" class="white-bg cursor s-hidden text-left">
+          <i class="fa fa-close absolute" id="closeNav" style="font-size: 20px;"></i>
+          <ul>
+            <li class="logo pdl-20 pdy-20" style="font-family: 'Poppins', sans-serif !important;border-bottom: 1px solid #e9e9e9;"><h3><a style="color: #101013;" href="mainPage.html">2BAC-SMB</a></h3></li>
+            <li class="links" style="border-bottom: 1px solid #e9e9e9;">
+              <a href="exam.html" class="fw-400 d-block pdl-30 pdy-15">الامتحانات</a>
+              <a href="eleve.html" class="fw-400 d-block pdl-30 pdy-15">قائمة التلاميذ</a>
+              <a href="about.html" class="fw-400 d-block pdl-30 pdy-15">معلومات  غير مهمة</a>
+              <a href="contact.html" class="fw-400 d-block pdl-30 pdy-15">تواصل</a>
+            </li>
+            <li class="buttons pdy-20 pdx-15" dir="rtl">
+              <a href="https://github.com/salhi50?tab=repositories" class="btn rounded mgt-1rem" style="background: #f7f7f7;border: 1px solid #dadce0;" target="_blank">
+                <span style="font-family: 'Poppins', sans-serif;" class="pdl-15">Code</span>
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+    </nav>
+    <div class="matieres main-pdtb" dir="rtl">
+        <div class="container">
+            <div class="title"><h3 class="mgb-half-1rem">اختر المادة</h3></div>
+            <p class="mgb-1h5rem" style="color: #606060;"></p>
+            <ul>
+                <li class="res-mgt-half-1re white-bg res-mgb-half-1rem pdy-20 pdx-15" style="border: 1px solid #e1e1e1;border-radius: 15px;">
+                    <a href="math.html" class="flex flex-between align-center" style="color: #101013;">
+                        <div class="right-mat flex align-center">
+                            <img src="imagess/math.png" alt="" style="width: 35px;height: 35px;">
+                            <h5 class="mgr-1h5rem text-ellipsis" style="color: #0f8cfa;">الرياضيات</h5>
+                        </div>
+                        <div class="left-mat">
+                            <i class="fa fa-chevron-left pdr-15" style="color: #0f8cfa;"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="res-mgt-half-1re white-bg res-mgb-half-1rem pdy-20 pdx-15" style="border: 1px solid #e1e1e1;border-radius: 15px;">
+                    <a href="pc.html" class="flex flex-between align-center" style="color: #101013;">
+                        <div class="right-mat flex align-center">
+                            <img src="imagess/pcchimie.png" alt="" style="width: 35px;height: 35px;">
+                            <h5 class="mgr-1h5rem text-ellipsis" style="color: #0f8cfa;">الفيزياء والكيمياء</h5>
+                        </div>
+                        <div class="left-mat">
+                            <i class="fa fa-chevron-left pdr-15" style="color: #0f8cfa;"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="res-mgt-half-1re white-bg res-mgb-half-1rem pdy-20 pdx-15" style="border: 1px solid #e1e1e1;border-radius: 15px;">
+                    <a href="sinej.html" class="flex flex-between align-center" style="color: #101013;">
+                        <div class="right-mat flex align-center">
+                            <img src="imagess/sinjenieur.png" alt="" style="width: 35px;height: 35px;">
+                            <h5 class="mgr-1h5rem text-ellipsis" style="color: #0f8cfa;">علوم المهندس</h5>
+                        </div>
+                        <div class="left-mat">
+                            <i class="fa fa-chevron-left pdr-15" style="color: #0f8cfa;"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="res-mgt-half-1re white-bg res-mgb-half-1rem pdy-20 pdx-15" style="border: 1px solid #e1e1e1;border-radius: 15px;">
+                    <a href="engl.html" class="flex flex-between align-center" style="color: #101013;">
+                        <div class="right-mat flex align-center">
+                            <img src="imagess/english.png" alt="" style="width: 35px;height: 35px;">
+                            <h5 class="mgr-1h5rem text-ellipsis" style="color: #0f8cfa;">الانجليزية</h5>
+                        </div>
+                        <div class="left-mat">
+                            <i class="fa fa-chevron-left pdr-15" style="color: #0f8cfa;"></i>
+                        </div>
+                    </a>
+                </li>
+                <li class="res-mgt-half-1re white-bg res-mgb-half-1rem pdy-20 pdx-15" style="border: 1px solid #e1e1e1;border-radius: 15px;">
+                    <a href="philo.html" class="flex flex-between align-center" style="color: #101013;">
+                        <div class="right-mat flex align-center">
+                            <img src="imagess/philo.png" alt="" style="width: 35px;height: 35px;">
+                            <h5 class="mgr-1h5rem text-ellipsis" style="color: #0f8cfa;">الفلسفة</h5>
+                        </div>
+                        <div class="left-mat">
+                            <i class="fa fa-chevron-left pdr-15" style="color: #0f8cfa;"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="some-words white-bg main-pdtb" dir="rtl">
+      <div class="container">
+          <div class="item max-100 mgx-auto rounded white-bg" style="border: 1px solid #e1e1e1;width: 500px;">
+            <div class="box pdy-20 pdx-15">
+              <h5 class="mgb-1rem text-center" style="color: #0f8cfa;">مقولة عشوائية </h3>
+                <div class="the-word">
+                  <div class="fw-500 text-center" style="font-size: 1.1rem;" id="aleat">
+                    <p id="aleat"></p>
+                  </div>
+                </div>
+                <div class="control mgt-1h5rem pdy-15" style="border-top: 1px solid #e1e1e1;">
+                  <div class="copy-to bleu-bg w-color full-width text-center rounded btn" onclick="CopyMe()" id="tocopy">
+                    <span>نسخ القولة</span>
+                  </div>
+                  <p class="p-small mgt-half-1rem fw-500" style="color: #606060;">لرؤية المزيد أعد تحميل الصفحة أو <span id="getMe" class="cursor" style="color: #0f8cfa;text-decoration: underline;">انقر هنا</span></a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="w-color" id="foot" style="padding-top: 20px !important;padding-bottom: 60px;">
+        <div class="container">
+          <div class="social flex justify-center">
+            <a href="https://github.com/salhi50?tab=repositories" target="_blank"><i class="fab fa-github w-color"></i></a>
+          </div>
+          <div class="copy text-center mgt-1rem p-xsmall pdb-15" style="font-family: 'Poppins', sans-serif; color: #a8a8a8;">made by <i class="fa fa-heart mgx-4" style="color: #d34848;"></i> Salhi for 2BAC-SMB</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+
+// start aleatoire
+let myBtn = document.getElementById("tocopy");
+let getMe = document.getElementById("getMe");
+let aleat = document.getElementById("aleat");
+
+let myWords = [
+    "لا يمكن تحقيق النجاح الأ اذا أحببت ما تقوم به",
+    "السر الأعظم للنجاح فى الحياة هو أن تدرك ما المقدار لك فعله ثم تقوم بفعله",
+    "النجاح عادة يأتى لهؤلاء الذين مشغولون جدآ ليبحثوا عنه",
+    "النجاح ليس نهاية والفشل ليس قاتلآ أنما الشجاعة للأستمرار هى ما يهم",
+    "أنا لا يهمني كم من الناس أرضيت .. ولكن يهمني أي نوع من الناس أقنعت",
+    "إياك ومصاحبة المغرور، فإنه إن رأى منك حسنة نسبها إليه وإن بدت منه سيئة نسبها إليك",
+    "الجبان يزعم انه حذر، والبخيل يزعم أنه مقتصد",
+    "من يفتقر على نفسه يكدس الثروة لغيره",
+    "بقدر ما يكون مقام المرء رفيعا بقدر ما يتعين عليه أن يبدو متواضعا",
+    "الحرب هي تسلية الزعماء الوحيدة التي يسمحون لأفراد الشعب المشاركة فيها",
+    "املك الرعية بالاحسان اليها تضفر بالمحبة منها",
+    "أفضل طريقة لالزام الناس أن يقولوا فينا خيرا هي أن نصنع الخير",
+    "بعد أن يتعود المرء على السرقة عليه أن يتعلم كيف يشنق",
+    "ليس الشقاء أن تكون أعمى، بل الشقاء أن تعجز عن احتمال العمى.",
+    "الصبر صبران صبر على ما تكره و صبر على ما تحب",
+    "ليست الألقاب هي التي تكسب المجد ، بل الناس من يكسبون الألقاب مجداً",
+    "يجب أن تقترن العدالة بالقوة بحيث يصبح كل شيء عادل قوي وكل قوي عادل",
+    "ليس من العدل أن تطلب من الآخرين ما لست أنت مستعدا لفعله",
+    "العفو يفسد من اللئيم بقدر ما يصلح من الكريم",
+    "كل خطأ جسيم يمر بلحظة وجيزة يمكن فيها استرجاعه و ربما علاجه",
+    " نسمي عصور الظلام كذلك ، لا لأن النور لا يسطع فيها و لكن لأن الناس يرفضون رؤيته",
+    " أن تموت جوعاً وأنت حر خير من أن تعيش عبداً وأنت سمين",
+];
+
+
+let ranWords = myWords[Math.floor(Math.random() * myWords.length)];
+
+getMe.onclick = function (){
+  window.location.reload();
+}
+
+window.onload = function(){
+  aleat.textContent = ranWords;
+}
+
+function CopyMe(TextToCopy) {
+
+  TextToCopy = ranWords;
+  var TempText = document.createElement("input");
+  TempText.value = TextToCopy;
+  document.body.appendChild(TempText);
+  TempText.select();
+  
+  document.execCommand("copy");
+  document.body.removeChild(TempText);
+  myBtn.textContent = "تم النسخ";
+  
+  setTimeout(function(){
+    myBtn.textContent = "نسخ القولة";
+  },2000)
+}
+
+let dropDown = document.getElementById("drop");
+let dropMenu = document.getElementById("dropMenu");
+let sideMenu = document.getElementById("sideMenu");
+
+
+// drop dropDown menu
+
+dropDown.addEventListener("click",function(){
+    if(dropMenu.style.display === "none"){
+        dropMenu.style.display = "block";
+    }
+    else{
+        dropMenu.style.display = "none";
+    }
+})
+
+
+// navbar
+
+let nav = document.getElementById("nav");
+let closeNav = document.getElementById("closeNav");
+let shadowContent = document.getElementById("shadowContent");
+
+sideMenu.addEventListener("click",function(){
+    nav.style.left = "0";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    document.body.style.overflowY = "scroll";
+    document.body.style.height = "100%";
+    shadowContent.style.cssText = "visibility: visible;opacity: 1;"
+})
+closeNav.addEventListener("click",function(){
+    document.body.style.position = "initial";
+    document.body.style.width = "initial";
+    document.body.style.overflowY = "initial";
+    document.body.style.height = "initial";
+    nav.style.left = "-280px";
+    shadowContent.style.cssText = "visibility: hidden;opacity: 0;"
+})
+
+
+  </script>
+</html>

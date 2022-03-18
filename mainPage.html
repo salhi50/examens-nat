@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!-- id name: fluidTag  -->
+<html dir="ltr" lang="ar" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2BAC-SMB</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Font Awesome V4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome V5.15.4 -->    
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/correct.css"/>
+    <!-- Framwork -->
+    <link rel="stylesheet" href="css/wspace.css">
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <!-- theme-color -->
+    <meta name="theme-color" content="#0f8cfa">
+  </head>
+  <body>
+    <header class="bleu-bg pdy-15" dir="rtl">
+      <div class="container">
+        <ul class="flex flex-between fd-row-reverse align-center">
+          <li class="left-side">
+            <div class="logo"><a href="mainPage.html"><h3 class="w-color user-none" style="font-family: 'Poppins', sans-serif;">2BAC-SMB</h3></a></div>
+          </li>
+          <li class="right-side">
+            <!-- id name => sideMenu -->
+            <div class="bars-list s-hidden flex align-center justify-center cursor" id="sideMenu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="white" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+              </svg>
+            </div>
+            <div class="links s-visible d-hidden">
+              <div class="more cursor w-color relative d-none">
+                <div id="drop" class="user-none">
+                  <span class="mgl-4">المزيد</span>
+                  <i class="fa fa-chevron-down mgt-4" style="font-size: 12px;"></i>
+                </div>
+                <ul class="white-bg absolute tl-pos-initial index-3" id="dropMenu" style="display: none;">
+                  <li class="pdx-20 pdy-5"><a href="contact.html" class="text-ellipsis" style="color: #101013;">تواصل</a></li>
+                  <li class="pdx-20 pdy-5"><a href="about.html" class="text-ellipsis" style="color: #101013;">معلومات  غير مهمة</a></li>
+                </ul>
+              </div>
+              <a href="about.html" class="w-color fw-400 d-inblock about capital pdx-15">معلومات  غير مهمة</a>
+              <a href="contact.html" class="w-color fw-400 d-inblock contact capital pdx-15">تواصل</a>
+              <a href="eleve.html" class="w-color fw-400 d-inblock capital pdx-15">قائمة التلاميذ</a>
+              <a href="exam.html" class="w-color fw-400 d-inblock capital pdx-15">الامتحانات</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+      <div id="shadowContent" class="all-pos-initial s-hidden"></div>
+      <nav id="nav" class="white-bg cursor s-hidden text-left">
+        <i class="fa fa-close absolute" id="closeNav" style="font-size: 20px;"></i>
+        <ul>
+          <li class="logo pdl-20 pdy-20" style="font-family: 'Poppins', sans-serif !important;border-bottom: 1px solid #e9e9e9;"><h3><a style="color: #101013;" href="mainPage.html">2BAC-SMB</a></h3></li>
+          <li class="links" style="border-bottom: 1px solid #e9e9e9;">
+            <a href="exam.html" class="fw-400 d-block pdl-30 pdy-15">الامتحانات</a>
+            <a href="eleve.html" class="fw-400 d-block pdl-30 pdy-15">قائمة التلاميذ</a>
+            <a href="about.html" class="fw-400 d-block pdl-30 pdy-15">معلومات  غير مهمة</a>
+            <a href="contact.html" class="fw-400 d-block pdl-30 pdy-15">تواصل</a>
+          </li>
+          <li class="buttons pdy-20 pdx-15" dir="rtl">
+            <a href="https://github.com/salhi50?tab=repositories" class="btn rounded mgt-1rem" style="background: #f7f7f7;border: 1px solid #dadce0;" target="_blank">
+              <span style="font-family: 'Poppins', sans-serif;" class="pdl-15">Code</span>
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section style="border-bottom: 1px solid #e9e9e9;padding-top: 60px;padding-bottom: 30px;" dir="rtl">
+        <div class="container">
+          <div class="list-ctrl flex flex-wrap flex-between">
+            <div class="item div-50 res-div-100 res-order-2 res-mgt-3rem">
+              <h1 class="res-cent-text">تحميل الامتحانات الوطنية</h1>
+              <p class="mgt-1rem res-cent-text" style="color: #606060;">امتحانات وطنية للباكالوريا علوم رياضية "ب" خيار فرنسي لجميع المواد( علوم مهندس - رياضيات - فيزياء - انجليزية - فلسفة )</p>             
+              <div>
+                <a href="exam.html" class="btn res-div-100 pdx-20 mgt-2rem  rounded w-color green-bg" style="padding-top: 8px;padding-bottom: 8px;">
+                  <span>حمل الآن</span>
+                  <i class="fa fa-cloud-download-alt w-color pdr-15"></i>                
+                </a>
+                <a href="#main" class="btn res-mgt-1rem res-div-100 pdx-20 rounded w-color" style="border: 1px solid #ddd;background: #ededed;padding-top: 8px;padding-bottom: 8px;">
+                  <span style="color: #0f8cfa;">اكتشف أكثر</span>
+                  <i class="fa fa-arrow-down pdr-15" style="color: #0f8cfa;"></i>                
+                </a>
+              </div>
+            </div>
+            <div class="item div-40 resice mgx-auto">
+              <img src="imagess/section.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <main id="main" class="main-pdtb bg-section" dir="rtl">
+        <div class="container">
+          <div class="title"><h2 class="mgb-half-1rem res-cent-text">الميزات</h2></div>
+          <p style="color: #606060;" class="mgt-half-1rem p-mid res-cent-text">خصائص لن تجدها في أي موقع آخر</p>
+          <div class="list-ctrl grid mgt-3rem">
+            <div class="main-box flex fd-col flex-evenly white-bg pd-15 rounded" style="border: 1px solid #ededed;">
+                <img src="imagess/speed.svg" alt="">
+                <h5 class="mgt-half-1rem">تحميل سريع</h5>
+                <p style="color: #606060;" class="p-mid mgt-half-1rem">التحميل مباشر،لايحتاج تخطي إعلانات.</p>
+            </div>
+            <div class="main-box flex fd-col flex-evenly white-bg pd-15 rounded" style="border: 1px solid #ededed;">
+                <img src="imagess/corrige.svg" alt="">
+                <h5 class="mgt-half-1rem">امتحانات مع التصحيح</h5>
+                <p style="color: #606060;" class="p-mid mgt-half-1rem">هذه الميزة تحتاج إلى إدخال كود مقدم من عند <span style="color: #0f8cfa;" class="fw-500">salhi</span> </p>
+            </div>
+            <div class="main-box flex fd-col flex-evenly white-bg pd-15 rounded" style="border: 1px solid #ededed;">
+                <img src="imagess/Amark.svg" alt="">
+                <h5 class="mgt-half-1rem">معدلات عالية</h5>
+                <p style="color: #606060;" class="p-mid mgt-half-1rem">التطبيق العملي على الامتحانات الوطنية يرفع إمكانية الحصول على معدلات عالية.</p>
+            </div>
+            <div class="main-box flex fd-col flex-evenly white-bg pd-15 rounded" style="border: 1px solid #ededed;">
+                <img src="imagess/free.svg" alt="">
+                <h5 class="mgt-half-1rem">تنزيل لامحدود</h5>
+                <p style="color: #606060;" class="p-mid mgt-half-1rem">امتحانات على صيغة PDF مقدمة بشكل مجاني</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="how-to-download relative main-pdtb white-bg" dir="rtl">
+        <div class="container">
+          <div class="title"><h2 class="mgb-2rem res-cent-text">كيفية التحميل</h2></div>
+          <ul style="border-right: 1px solid #ddd;">
+            <li class="relative pdr-20 div-70 res-div-100">
+              <p>للتحميل اضغط على زر القائمة فوق ومن تمة على <span>الامتحانات</span> أو من خلال الزر المجود في أعلى الصفحة</p>
+              <img src="imagess/first.jpg" class="mgt-2rem" alt="">
+            </li>
+            <li class="relative pdr-20 div-70 res-div-100 mgt-1h5rem">
+              <p>اختر مادة من القائمة ( علوم مهندس - رياضيات - فيزياء - انجليزية - فلسفة )</p>
+              <img src="imagess/chooseone.jpg" class="mgt-2rem" alt="">
+            </li>
+            <li class="relative pdr-20 div-70 res-div-100 mgt-1h5rem">
+              <p>اختر السنة و اضغط على زر التحميلِ سيتم تنزيل ملف يحتوي على أسئلة الامتحان<p>
+              <img src="imagess/choseexam.jpg" class="mgt-2rem shadow" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="stats bg-section main-pdtb" dir="rtl" id="but">
+        <div class="container">
+          <div class="title"><h2 class="mgb-3rem res-cent-text">احصائيات سريعة</h2></div>
+          <div class="list-ctrl grid">
+            <div class="box rounded white-bg pd-15 text-center" style="border: 1px solid #ededed;">
+              <h3 class="numero" data-last="31">0</h3>
+              <p class="p-mid" style="color: #606060;">تلميذ في القسم</p>
+            </div>
+            <div class="box rounded white-bg pd-15" style="border: 1px solid #ededed;">
+              <h3 class="numero text-center" data-last="5">0</h3>
+              <p class="p-small text-center" style="color: #606060;">مواد</p>
+            </div>
+            <div class="box rounded white-bg pd-15" style="border: 1px solid #ededed;">
+              <h3 class="numero text-center" data-last="250">0</h3>
+              <p class="p-small text-center" style="color: #606060;">ملف PDF</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-advices white-bg main-pdtb" dir="rtl">
+        <div class="container">
+          <div class="title" style="margin-bottom: 4rem;"><h2 class="res-cent-text">نصائح للمقبلين عَلَى إِمْتِحَانَات البكالوريا</h2></div>
+          <div class="list-ctrl">
+            <div class="item relative flex align-center fd-row-reverse flex-between flex-wrap" id="item">
+              <div class="picture div-40 res-div-100 relative">
+                <div id="right-device" class="flex align-center justify-center s-hidden absolute"><i class="fa fa-chevron-right"></i></div>
+                <div id="left-device" class="flex align-center justify-center s-hidden absolute"><i class="fa fa-chevron-left"></i></div>
+                <div class="main-img active">
+                  <img src="imagess/firstimg.jpg" class="rounded" alt="">
+                  <div class="ticket p-small absolute bleu-bg w-color tl-pos-initial" style="padding: 2px 3px;">
+                  <span dir="ltr">1 / 10</span>
+                </div>
+                </div>
+                <div class="main-img">
+                  <img src="imagess/secondimg.jpg" class="rounded" alt="">
+                  <div class="ticket p-small absolute bleu-bg w-color tl-pos-initial" style="padding: 2px 3px;">
+                  <span dir="ltr">2 / 10</span>
+                </div>
+                </div>
+                <div class="main-img">
+                  <img src="imagess/oneimg.jpg" class="rounded border-for-white" alt="">
+                  <div class="ticket p-small absolute bleu-bg w-color tl-pos-initial" style="padding: 2px 3px;">
+                  <span dir="ltr">3 / 10</span>
+                </div>
+                </div>
+                <div class="main-img">
+                  <img src="imagess/tenimg.jpg" class="rounded" alt="">
+                  <div class="ticket p-small absolute bleu-bg w-color tl-pos-initial" style="padding: 2px 3px;">
+                  <span dir="ltr">4 / 10</span>
+                </div>
+                </div>
+                <div class="main-img">
+                  <img src="imagess/sevenimg.jpg" class="rounded border-for-white" alt="">
+                  <div class="ticket p-small absolute bleu-bg w-color tl-pos-initial" style="padding: 2px 3px;">
+                  <span dir="ltr">5 / 10</span>
+                </div>
+                </div>
+                <div class="main-img">
+                  <img src="imagess/threeimg.jpg" class="rounded" alt="">
+                  <div class="ticket p-small absolute bleu-bg w-color tl-pos-initial" style="padding: 2px 3px;">
+                  <span dir="ltr">6 / 10</span>
+                </div>
+                </div>
+                <div class="main-img">
+                  <img src="imagess/twoimg.jpg" class="rounded border-for-white" alt="">
+                  <div class="ticket p-small absolute bleu-bg w-color tl-pos-initial" style="padding: 2px 3px;">
+                  <span dir="ltr">7 / 10</span>
+                </div>
+                </div>
+                <div class="main-img">
+                  <img src="imagess/fiveimg.jpg" class="rounded" alt="">
+                  <div class="ticket p-small absolute bleu-bg w-color tl-pos-initial" style="padding: 2px 3px;">
+                  <span dir="ltr">8 / 10</span>
+                </div>
+                </div>
+                <div class="main-img">
+                  <img src="imagess/fourimg.jpg" class="rounded" alt="">
+                  <div class="ticket p-small absolute bleu-bg w-color tl-pos-initial" style="padding: 2px 3px;">
+                  <span dir="ltr">9 / 10</span>
+                </div>
+                </div>
+                <div class="main-img">
+                  <img src="imagess/eightimg.jpg" class="rounded" alt="">
+                  <div class="ticket p-small absolute bleu-bg w-color tl-pos-initial" style="padding: 2px 3px;">
+                  <span dir="ltr">10 / 10</span>
+                </div>
+                </div>
+              </div>
+              <div class="word div-50 res-div-100">
+                <div class="para-word active">
+                  <p class="tiret">"</p>
+                  <p class="main-word fw-500">النهوض المبكر للمراجعة فِي الصباح و استغلال الوقت خِلَالَ اليوم</p>
+                  <p class="tiret text-left">"</p>
+                  <p class="source-word text-left p-xsmall mgt-half-1rem" style="color: #7a7a7a;">men.gov.ma</p>
+                </div>
+                <div class="para-word">
+                  <p class="tiret">"</p>
+                  <p class="main-word fw-500">المراجعة المنفردة أوفي جماعة لَا تفوق ثلاثة أفراد.</p>
+                  <p class="tiret text-left">"</p>
+                  <p class="source-word text-left p-xsmall mgt-half-1rem" style="color: #7a7a7a;">men.gov.ma</p>
+                </div>
+                <div class="para-word">
+                  <p class="tiret">"</p>
+                  <p class="main-word fw-500">التمرن عَلَى إِمْتِحَانَات لاعوام السابقة</p>
+                  <p class="tiret text-left">"</p>
+                  <p class="source-word text-left p-xsmall mgt-half-1rem" style="color: #7a7a7a;">men.gov.ma</p>
+                </div>
+                <div class="para-word">
+                  <p class="tiret">"</p>
+                  <p class="main-word fw-500">ابعاد الهاتف النقال اثناء المراجعة.</p>
+                  <p class="tiret text-left">"</p>
+                  <p class="source-word text-left p-xsmall mgt-half-1rem" style="color: #7a7a7a;">men.gov.ma</p>
+                </div>
+                <div class="para-word">
+                  <p class="tiret">"</p>
+                  <p class="main-word fw-500">التركيز الجيد اثناء المراجعة</p>
+                  <p class="tiret text-left">"</p>
+                  <p class="source-word text-left p-xsmall mgt-half-1rem" style="color: #7a7a7a;">men.gov.ma</p>
+                </div>
+                <div class="para-word">
+                  <p class="tiret">"</p>
+                  <p class="main-word fw-500">اجعل لنفسك برنامجا و حاول ان تلتزم بِهِ.</p>
+                  <p class="tiret text-left">"</p>
+                  <p class="source-word text-left p-xsmall mgt-half-1rem" style="color: #7a7a7a;">men.gov.ma</p>
+                </div>
+                <div class="para-word">
+                  <p class="tiret">"</p>
+                  <p class="main-word fw-500">مراجعة الدروس فِي وسط هادىء.</p>
+                  <p class="tiret text-left">"</p>
+                  <p class="source-word text-left p-xsmall mgt-half-1rem" style="color: #7a7a7a;">men.gov.ma</p>
+                </div>
+                <div class="para-word">
+                  <p class="tiret">"</p>
+                  <p class="main-word fw-500">الإعتماد على التلاخيص لحفظ او مراجعة الدروس.</p>
+                  <p class="tiret text-left">"</p>
+                  <p class="source-word text-left p-xsmall mgt-half-1rem" style="color: #7a7a7a;">men.gov.ma</p>
+                </div>
+                <div class="para-word">
+                  <p class="tiret">"</p>
+                  <p class="main-word fw-500">الحرص عَلَى النوم المبكر و تجنب السهر.</p>
+                  <p class="tiret text-left">"</p>
+                  <p class="source-word text-left p-xsmall mgt-half-1rem" style="color: #7a7a7a;">men.gov.ma</p>
+                </div>
+                <div class="para-word">
+                  <p class="tiret">"</p>
+                  <p class="main-word fw-500">الحرص عَلَى الاكل الجيد و الصحي.</p>
+                  <p class="tiret text-left">"</p>
+                  <p class="source-word text-left p-xsmall mgt-half-1rem" style="color: #7a7a7a;">men.gov.ma</p>
+                </div>
+              </div>
+                <div id="left" class="flex align-center justify-center d-hidden"><i class="fa fa-chevron-left"></i></div>
+                <div id="right" class="flex align-center justify-center d-hidden"><i class="fa fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="countDown main-pdtb white-bg" dir="rtl" style="border-top: 1px solid #e1e1e1;border-bottom: 1px solid #e1e1e1;">
+        <div class="container">
+          <div class="title"><h3 class="mgb-3rem res-cent-text s-hidden">العد التنازلي للامتحان الوطني</h3></div>
+          <div class="list-ctrl flex flex-between fd-row-reverse align-center flex-wrap" dir="ltr">
+            <div class="items div-40 res-div-80 mgx-auto"><img src="imagess/time.png" alt=""></div>
+            <div class="items div-55 res-div-100">
+              <div class="title"><h3 class="mgb-3rem text-center d-hidden">العد التنازلي للامتحان الوطني</h3></div>
+              <div class="time">
+                <div class="days rounded item">
+                  <p id="day">300</p>
+                  <p class="p-xsmall capital">يوم</p>
+                </div>
+                <div class="hours item rounded">
+                  <p id="hour">40</p>
+                  <p class="p-xsmall capital">ساعة</p>
+                </div>
+                <div class="minutes item rounded">
+                  <p id="min">50</p>
+                  <p class="p-xsmall capital">دقيقة</p>
+                </div>
+                <div class="seconds item rounded">
+                  <p id="sec">40</p>
+                  <p class="p-xsmall capital">ثانية</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="white-bg faq main-pdtb" dir="rtl">
+          <div class="container">
+            <div class="title"><h2 class="mgb-3rem text-center">أسئلة و أجوبة </h2></div>
+            <ul style="width: 700px;" class="max-100 mgx-auto">
+              <li class="pdy-15 cursor pdx-5 faqs" style="border-top: 1px solid #e1e1e1;">
+                <div class="question flex align-center flex-between">
+                  <p class="fw-500 qs">تاريخ إجراء الإمتحان الوطني 2022</p>
+                <i class="fa fa-chevron-down" style="color: #3e3e3e;font-size: 14px;"></i>
+                </div>
+                <div class="answer">
+                  <p style="color: #606060;" class="pdy-20">            
+                    – القطب العلمي والتقني والمهني من 20 إلى 22 يونيو 2022
+                    <br>
+                    – قطب الآداب والتعليم الاصيل من 23 الى 24 يونيو 2022.
+                    <br>
+                    - تاريخ إجراء الدورة الإستدراكية من امتحانات البكالوريا أيام 15 و16 و17 و18 و19 يوليوز 2022.
+                    هذا وسيتم الإعلان عن نتائج الدورة العادية لامتحان شهادة البكالوريا يوم 1 يوليوز 2022، ونتائج الدورة الاستدراكية من ذات الامتحان يوم 22 يوليوز.
+                  </p>
+                </div>
+              </li>
+              <li class="pdy-15 cursor pdx-5 faqs" style="border-top: 1px solid #e1e1e1;">
+                <div class="question flex align-center flex-between">
+                  <p class="fw-500 qs">متى يتم التعبير عن رغبات الترشيح للمدارس العليا</p>
+                  <i class="fa fa-chevron-down" style="color: #3e3e3e;font-size: 14px;"></i>
+                </div>
+                <div class="answer">
+                  <p style="color: #606060;" class="pdy-20">
+                    التعبير عن رغبات الترشيح: من 22/06/2021 إلى 12/07/2021. <br> تاريخ إرسال ملف الترشيح (بكالوريا أجنبية): من 22/06/2021 إلى 08/07/2021. <br> تثبيت مقترحات القبول: من 15/07/2021 إلى 28/07/2021. <br> تاريخ إيداع شهادة البكالوريا: من 26/07/2021 إلى 29/07/20211.
+                  </p>
+                </div>
+              </li>
+              <li class="pdy-15 cursor pdx-5 faqs" style="border-top: 1px solid #e1e1e1;border-bottom: 1px solid #e1e1e1;">
+                <div class="question flex align-center flex-between">
+                  <p class="fw-500 qs">عدد الأوراق الخاصة بالامتحان الوطني</p>
+                <i class="fa fa-chevron-down" style="color: #3e3e3e;font-size: 14px;"></i>
+                </div>
+                <div class="answer">
+                  <p style="color: #606060;" class="pdy-20">
+                    مادة الرياضيات : يتراوح عدد الأوراق بين 5 و 7 أوراق.
+                    <br>
+                    علوم المهندس : بين 11 و 20 ورقة.
+                    <br>
+                    الفيزياء و الكيمياء : بين 8 و 12 ورقة.
+                    <br>
+                    الفلسفة : ورقة يتم فيها اختيار أحد المواضيع.
+                    <br>
+                    الإنجليزية : بين 5 و 7 أوراق.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="w-color" id="foot" style="padding-top: 20px !important;padding-bottom: 20px;">
+        <div class="container">
+          <div class="social flex justify-center">
+            <a href="https://github.com/salhi50?tab=repositories" target="_blank"><i class="fab fa-github w-color"></i></a>
+          </div>
+          <div class="copy text-center mgt-1rem p-xsmall pdb-15" style="font-family: 'Poppins', sans-serif; color: #a8a8a8;">made by <i class="fa fa-heart mgx-4" style="color: #d34848;"></i> Salhi for 2BAC-SMB</div>
+        </div>
+      </footer>
+  </body>
+  <script src="begin.js"></script>
+</html>
+

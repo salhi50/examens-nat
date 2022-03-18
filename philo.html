@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<!-- id name: fluidTag  -->
+<html dir="ltr" lang="ar" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2BAC-SMB</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Font Awesome V4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome V5.15.4 -->    
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/correct.css"/>
+    <!-- Framwork -->
+    <link rel="stylesheet" href="css/wspace.css">
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <!-- theme-color -->
+    <meta name="theme-color" content="#0f8cfa">
+  </head>
+  <body>
+    <header class="bleu-bg pdy-15" dir="rtl">
+      <div class="container">
+        <ul class="flex flex-between fd-row-reverse align-center">
+          <li class="left-side">
+            <div class="logo"><a href="mainPage.html"><h3 class="w-color user-none" style="font-family: 'Poppins', sans-serif;">2BAC-SMB</h3></a></div>
+          </li>
+          <li class="right-side">
+            <!-- id name => sideMenu -->
+            <div class="bars-list s-hidden flex align-center justify-center cursor" id="sideMenu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="white" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+              </svg>
+            </div>
+            <div class="links s-visible d-hidden">
+              <div class="more cursor w-color relative d-none">
+                <div id="drop" class="user-none">
+                  <span class="mgl-4">المزيد</span>
+                  <i class="fa fa-chevron-down mgt-4" style="font-size: 12px;"></i>
+                </div>
+                <ul class="white-bg absolute tl-pos-initial index-3" id="dropMenu" style="display: none;">
+                  <li class="pdx-20 pdy-5"><a href="contact.html" class="text-ellipsis" style="color: #101013;">تواصل</a></li>
+                  <li class="pdx-20 pdy-5"><a href="about.html" class="text-ellipsis" style="color: #101013;">معلومات  غير مهمة</a></li>
+                </ul>
+              </div>
+              <a href="about.html" class="w-color fw-400 d-inblock about capital pdx-15">معلومات  غير مهمة</a>
+              <a href="contact.html" class="w-color fw-400 d-inblock contact capital pdx-15">تواصل</a>
+              <a href="eleve.html" class="w-color fw-400 d-inblock capital pdx-15">قائمة التلاميذ</a>
+              <a href="exam.html" class="w-color fw-400 d-inblock capital pdx-15">الامتحانات</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+      <div id="shadowContent" class="all-pos-initial s-hidden"></div>
+      <nav id="nav" class="white-bg cursor s-hidden text-left">
+        <i class="fa fa-close absolute" id="closeNav" style="font-size: 20px;"></i>
+        <ul>
+          <li class="logo pdl-20 pdy-20" style="font-family: 'Poppins', sans-serif !important;border-bottom: 1px solid #e9e9e9;"><h3><a style="color: #101013;" href="mainPage.html">2BAC-SMB</a></h3></li>
+          <li class="links" style="border-bottom: 1px solid #e9e9e9;">
+            <a href="exam.html" class="fw-400 d-block pdl-30 pdy-15">الامتحانات</a>
+            <a href="eleve.html" class="fw-400 d-block pdl-30 pdy-15">قائمة التلاميذ</a>
+            <a href="about.html" class="fw-400 d-block pdl-30 pdy-15">معلومات  غير مهمة</a>
+            <a href="contact.html" class="fw-400 d-block pdl-30 pdy-15">تواصل</a>
+          </li>
+          <li class="buttons pdy-20 pdx-15" dir="rtl">
+            <a href="https://github.com/salhi50?tab=repositories" class="btn rounded mgt-1rem" style="background: #f7f7f7;border: 1px solid #dadce0;" target="_blank">
+              <span style="font-family: 'Poppins', sans-serif;" class="pdl-15">Code</span>
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="src pdy-15 pdx-10" style="background: #deeefc;" dir="rtl">
+        <div class="container">
+            <a href="mainPage.html" style="color: #131313;" class="d-inblock p-small">الرئيسية</a> / 
+            <a href="exam.html" style="color: #131313;" class="d-inblock p-small">الامتحانات</a> /
+            <a href="philo.html" style="color: #131313;" class="d-inblock p-small">الفلسفة</a>
+        </div>
+      </div>
+      <div class="exams-content mgt-2rem">
+        <div class="container">
+          <div class="list-control flex flex-between align-start fd-row-reverse flex-wrap" dir="rtl">
+            <div class="item div-25 res-order-2 res-div-100">
+              <ul class="rounded d-hidden full-width" style="border: 1px solid #d1d7de;" dir="rtl">
+                  <li style="padding: 7px 20px; border-bottom: 1px solid #d1d7de;"><a href="math.html" style="color: #101013;">الرياضيات</a></li>
+                  <li style="padding: 7px 20px;border-bottom: 1px solid #d1d7de;"><a href="pc.html" style="color: #101013;">الفيزياء والكيمياء</a></li>
+                  <li style="padding: 7px 20px; border-bottom: 1px solid #d1d7de;"><a href="sinej.html" style="color: #101013;">علوم المهندس</a></li>
+                  <li style="padding: 7px 20px; border-bottom: 1px solid #d1d7de;"><a href="engl.html" style="color: #101013;">الانجليزية</a></li>
+                  <li style="padding: 7px 20px;" class="active"><a href="philo.html" style="color: #101013;">الفلسفة</a></li>
+              </ul>
+              <div class="secret-box rounded res-mgt-3rem mgt-2rem pd-10" style="border: 1px solid #d1d7de;">
+                <div class="img-padlock mgx-auto text-center max-100 mgb-half-1rem res-div-75"><img src="imagess/padlock.png" style="max-width: 80px;" alt=""></div>
+                <div class="title-code text-center" style="color: #3e3e3e;"><h6 class="mgb-6">الكود الخاص بالامتحانات</h6></div>
+                <div class="title-code text-center"><p class="p-mid fw-400" style="color: #393939;">بهذا الكود يمكنك تحميل جميع الامتحانات الخاصة بمادة الفلسفة</p></div>
+                <div class="error-empty pdt-5 d-none" id="errorEmpty">
+                  <i class="fa fa-exclamation-triangle" style="color: red;"></i>
+                  <p class="p-small pdr-5 d-inblock" style="color: red;">هذا الحقل مطلوب حيا أو ميتا</p>
+                </div>
+                <div class="input-code rounded mgt-1rem flex align-center full-width" id="inpCode">
+                  <div class="inp fl-1"><input type="password" placeholder="أدخل الكود" id="math-exams" class="full-width"></div>
+                  <div class="icon-hide-show cursor pdx-15 flex align-center justify-center"><i id="showPass" style="color: #4a4a4a;" class="fa fa-eye"></i></div>
+                </div>
+                <div class="error-code mgy-4 d-none" id="errorCode">
+                  <i class="fa fa-exclamation-triangle" style="color: red;"></i>
+                  <p class="p-small pdr-5 d-inblock" style="color: red;">الرمز الذي أدخلته غير صحيح</p>
+                </div>
+                <div class="thelist">
+                  <div class="modal full-width all-pos-initial flex align-center justify-center d-none" id="modal">
+                    <div class="cont-modal pdb-25 white-bg max-100 mgx-1rem rounded relative" style="border: 1px solid #dadce0;width: 500px; " id="mainModal" dir="rtl">
+                      <div class="image-modal-congra mgx-auto text-center max-100 mgb-half-1rem"><img src="imagess/congraclass.png" style="max-width: 120px;" alt=""></div>
+                      <div class="title-congra text-center"><h3>تهانينا !</h3></div>
+                      <div class="para-congra text-center mgy-half-1rem"><p class="p-mid fw-400">لبدء التحميل <a href="secret/nat-exams-philo.zip" download="" class="fw-500" style="color: #0f8cfa;">إضغط هنا.</a></p></div>
+                      <i class="cursor fa fa-close absolute" style="font-size: 20px;top: 20px;right: 20px;" id="closeModal"></i>
+                    </div>
+                </div>
+                </div>
+                <a class="w-color bleu-bg pdy-10 mgy-half-1rem btn rounded full-width" id="subCode">
+                  <span id="checkCode">التحقق</span>
+                  <div class="loadering d-none" id="loadCode"><div class="loading" style="border-color: white;border-left-color: transparent;"></div></div>
+                </a>
+              </div>
+              <div class="dommand rounded res-mgt-1h5rem mgt-2rem pd-10" style="border: 1px solid #d1d7de;" dir="ltr">
+                <h5 class="text-center" dir="rtl">لطلب الكود</h5>
+                <p class="mgy-half-1rem p-small text-center" style="color: #606060;">.يمكنلك طلبولي فالمدرسة أو من الواتساب</p>
+                <a target="_blank" href="https://t.me/salhipain" class="btn rounded bg-section full-width pdy-10" style="border-radius: 25px;border: 1px solid #dadce0;">
+                  <i class="fab fa-telegram-plane" style="font-size: 25px;color: #0f8cfa;"></i>
+                  <span class="pdl-15" style="color: #3e3e3e;">Telegram</span>
+                </a>
+              </div>
+             <div class="secret-box rounded mgb-2rem res-mgt-3rem mgt-2rem pd-10" style="border: 1px solid #d1d7de;">
+                <div class="img-padlock mgx-auto text-center max-100 mgb-half-1rem res-div-75"><img src="imagess/congrabox.png" style="max-width: 80px;" alt=""></div>
+                <div class="title-code text-center" style="color: #3e3e3e;"><h6 class="mgb-6">الكود الخاص بالتصحيح </h6></div>
+                <div class="title-code text-center"><p class="p-mid fw-400" style="color: #393939;">بهذا الكود يمكنك تحميل جميع الامتحانات الخاصة بمادة الفلسفة مع التصحيح</p></div>
+                <div class="error-empty pdt-5 d-none" id="empty">
+                  <i class="fa fa-exclamation-triangle" style="color: red;"></i>
+                  <p class="p-small pdr-5 d-inblock" style="color: red;">هذا الحقل مطلوب حيا أو ميتا</p>
+                </div>
+                <div class="input-code rounded mgt-1rem flex align-center full-width">
+                  <div class="inp fl-1"><input type="password" placeholder="أدخل الكود" id="si-exams" class="full-width"></div>
+                  <div class="icon-hide-show cursor pdx-15 flex align-center justify-center"><i id="showP" style="color: #4a4a4a;" class="fa fa-eye"></i></div>
+                </div>
+                <div class="error-code mgy-4 d-none" id="errorC">
+                  <i class="fa fa-exclamation-triangle" style="color: red;"></i>
+                  <p class="p-small pdr-5 d-inblock" style="color: red;">الرمز الذي أدخلته غير صحيح</p>
+                </div>
+                <div class="thelist">
+                  <div class="modal full-width all-pos-initial flex align-center justify-center d-none" id="madara">
+                    <div class="cont-modal pdb-25 white-bg max-100 mgx-1rem rounded relative" style="border: 1px solid #dadce0;width: 500px; " id="madaraModal" dir="rtl">
+                      <div class="image-modal-congra mgx-auto text-center max-100 mgb-half-1rem mgt-1rem"><img src="imagess/confetti.png" style="max-width: 120px;" alt=""></div>
+                      <div class="title-congra text-center"><h3>تهانينا !</h3></div>
+                      <div class="para-congra text-center mgy-half-1rem"><p class="p-mid fw-400">لبدء التحميل <a href="secret/corrige-exams-philo.zip" download="" class="fw-500" style="color: #0f8cfa;">إضغط هنا.</a></p></div>
+                      <i class="cursor fa fa-close absolute" style="font-size: 20px;top: 20px;right: 20px;" id="closeMadara"></i>
+                    </div>
+                </div>
+                </div>
+                <a class="w-color bleu-bg pdy-10 mgy-half-1rem btn rounded full-width" id="madaraSub">
+                  <span id="checkM">التحقق</span>
+                  <div class="loadering d-none" id="loadM"><div class="loading" style="border-color: white;border-left-color: transparent;"></div></div>
+                </a>
+              </div> 
+          </div>
+            <div class="main-content div-70 res-div-100">
+              <div class="title">
+                <h3 class="mgb-1h5rem">الامتحانات الوطنية لمادة الفلسفة</h3>
+              </div>
+              <div class="tabs user-none">
+                <ul class="flex">
+                  <li class="res-div-50 res-cent-text active tab" data-num=".normal-tab"><span>العادية</span></li>
+                  <li class="res-div-50 res-cent-text tab" data-num=".ratt-tab"><span>الاستدراكية</span></li>
+                </ul>
+              </div>
+              <div class="search-bar full-width mgy-1h5rem flex align-center" style="height: 46px;">
+                <div class="icon-search rounded flex align-center justify-center pdx-20" style="border: 1px solid #d1d4de;"><i class="fa fa-search" style="color: #393939;"></i></div>
+                <div class="input-field rounded fl-1" style="border: 1px solid #d1d4de;">
+                    <input type="search" id="inpSearch" class="full-width" placeholder="إبحت عن السنة">
+                </div>
+            </div>
+              <div class="normal-tab mgt-1h5rem tab-exams">
+                <ul class="rounded getLists" style="font-family: 'Poppins', sans-serif;" dir="ltr">
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2007-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2007-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2007-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2008-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2008-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2008-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2009-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2009-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2009-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2010-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2010-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2010-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2011-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2011-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2011-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2012-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2012-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2012-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2013-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2013-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2013-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2014-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2014-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2014-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2015-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2015-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2015-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2016-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2016-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2016-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2017-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2017-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2017-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2018-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2018-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2018-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2019-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2019-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2019-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;border-bottom: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2020-normal">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2020-normal</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/norm/nat-2020-normal-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ratt-tab mgt-1h5rem tab-exams d-none">
+                <ul class="rounded rattLists" style="font-family: 'Poppins', sans-serif;" dir="ltr">
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2005-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2005-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2005-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2007-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2007-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2007-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2009-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2009-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2009-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2010-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2010-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2010-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2011-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2011-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2011-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2012-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2012-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2012-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2013-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2013-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2013-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2014-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2014-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2014-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2015-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2015-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2015-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2016-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2016-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2016-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2017-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2017-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2017-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                  <li style="border-top: 1px solid #dadce0;border-bottom: 1px solid #dadce0;" class="pd-10 flex flex-between align-center" id="2020-ratt">
+                    <div class="cap text-ellipsis"><span class="capital fw-600" style="font-size: 17px;color: #0f8cfa;">2020-ratt</span></div>
+                    <div class="icon-download pdl-15">
+                      <a download="" href="exams/philo/ratt/nat-2020-ratt-philo.pdf" class="btn green-bg w-color rounded p-small fw-600" style="border-radius: 25px;background: #d4f7de;color: #009a05 !important;">
+                        <span class="pdr-5 capital">PDF</span>
+                        <i class="fa fa-download"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="error-not-found d-none" id="notFound">
+                <div class="images-error-not-found  text-center div-100 res-div-100">
+                    <img src="imagess/noresu.gif" alt="">
+                </div>
+                <div class="title-error-not-found text-center p-mid fw-600" style="margin-top: -30px; color: #606060;font-size: 1.1rem;"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <footer class="w-color" id="foot" style="padding-top: 20px !important;padding-bottom: 20px;">
+        <div class="container">
+          <div class="social flex justify-center">
+            <a href="https://github.com/salhi50?tab=repositories" target="_blank"><i class="fab fa-github w-color"></i></a>
+          </div>
+          <div class="copy text-center mgt-1rem p-xsmall pdb-15" style="font-family: 'Poppins', sans-serif; color: #a8a8a8;">made by <i class="fa fa-heart mgx-4" style="color: #d34848;"></i> Salhi for 2BAC-SMB</div>
+        </div>
+      </footer>
+</body>
+<script>
+    let dropDown = document.getElementById("drop");
+let dropMenu = document.getElementById("dropMenu");
+let sideMenu = document.getElementById("sideMenu");
+
+
+// drop dropDown menu
+
+dropDown.addEventListener("click",function(){
+    if(dropMenu.style.display === "none"){
+        dropMenu.style.display = "block";
+    }
+    else{
+        dropMenu.style.display = "none";
+    }
+})
+
+
+// navbar
+
+let nav = document.getElementById("nav");
+let closeNav = document.getElementById("closeNav");
+let shadowContent = document.getElementById("shadowContent");
+let inpSearch = document.getElementById("inpSearch")
+
+sideMenu.addEventListener("click",function(){
+    nav.style.left = "0";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    document.body.style.overflowY = "scroll";
+    document.body.style.height = "100%";
+    shadowContent.style.cssText = "visibility: visible;opacity: 1;"
+})
+closeNav.addEventListener("click",function(){
+    document.body.style.position = "initial";
+    document.body.style.width = "initial";
+    document.body.style.overflowY = "initial";
+    document.body.style.height = "initial";
+    nav.style.left = "-280px";
+    shadowContent.style.cssText = "visibility: hidden;opacity: 0;"
+})
+
+
+let numbers = [
+    "500",
+    "600",
+    "700",
+    "800",
+    "900",
+    "1000",
+    "850",
+    "400",
+    "550",
+]
+
+let ranNum = numbers[Math.floor(Math.random() * numbers.length)] ;
+
+// start exams
+
+let tabs = Array.from(document.querySelectorAll(".exams-content ul li.tab"));
+let normRatt = Array.from(document.querySelectorAll(".tab-exams"));
+let lExam = document.getElementById("lExam")
+
+tabs.forEach(function(tab){
+  tab.addEventListener("click",function(targ){
+    tabs.forEach(function(each){
+      each.classList.remove("active");
+    })
+    targ.currentTarget.classList.add("active");
+    normRatt.forEach((exa) => exa.style.display = "none")
+    document.querySelector(targ.currentTarget.dataset.num).style.display = "block";
+  })
+});
+
+
+let listNorm = Array.from(document.querySelectorAll("ul.getLists li"));
+let listRat = Array.from(document.querySelectorAll("ul.rattLists li"));
+let notFound = document.getElementById("notFound") 
+
+function getIt(usa){
+    return usa.dataset.hidden === "hidden";
+}
+
+inpSearch.addEventListener("input",function(inp){
+    let value = inp.target.value;
+    listNorm.forEach(function(norm){
+        if(norm.id.includes(value)){
+            norm.style.display = "flex";
+            norm.removeAttribute("data-hidden");
+        }
+        else{
+            norm.style.display = "none";
+            norm.setAttribute("data-hidden", "hidden");
+        }
+    })
+    if(inpSearch.value === ""){
+        notFound.style.display = "none";
+    }
+    else if(inpSearch.value.split("").length >> "0" && listNorm.every(getIt) === true){
+        notFound.style.display = "block";
+    }
+    else if(inpSearch.value.split("").length >> "0" && listNorm.every(getIt) === false){
+        notFound.style.display = "none";
+    }
+})
+inpSearch.addEventListener("input",function(inp){
+    let value = inp.target.value;
+    listRat.forEach(function(ratt){
+        if(ratt.id.includes(value)){
+            ratt.style.display = "flex";
+            ratt.removeAttribute("data-hidden");
+        }
+        else{
+            ratt.style.display = "none";
+            ratt.setAttribute("data-hidden", "hidden");
+        }
+    })
+    if(inpSearch.value === ""){
+        notFound.style.display = "none";
+    }
+    else if(inpSearch.value.split("").length >> "0" && listRat.every(rating) === true){
+        notFound.style.display = "block";
+    }
+    else if(inpSearch.value.split("").length >> "0" && listRat.every(rating) === false){
+        notFound.style.display = "none";
+    }
+})
+
+
+let modal = document.getElementById("modal");
+let subCode = document.getElementById("subCode");
+let mainModal = document.getElementById("mainModal");
+let errorCode = document.getElementById("errorCode");
+let loadCode = document.getElementById("loadCode");
+let checkCode = document.getElementById("checkCode");
+let inpMath = document.getElementById("math-exams");
+let errorEmpty = document.getElementById("errorEmpty");
+let showPass = document.getElementById("showPass");
+let closeModal = document.getElementById("closeModal")
+
+let madara = document.getElementById("madara");
+let madaraSub = document.getElementById("madaraSub");
+let madaraModal = document.getElementById("madaraModal");
+let errorC = document.getElementById("errorC");
+let loadM = document.getElementById("loadM");
+let checkM = document.getElementById("checkM");
+let inpSi = document.getElementById("si-exams");
+let empty = document.getElementById("empty");
+let showP = document.getElementById("showP");
+let closeMadara = document.getElementById("closeMadara")
+
+subCode.addEventListener("click",function(){
+  loadCode.style.display = "block";
+  checkCode.style.display = "none";
+  setTimeout(checkPass, ranNum);
+  function checkPass(){
+  if(inpMath.value.toLowerCase() == "philo2022"){
+    modal.style.display = "flex";
+    mainModal.classList.add("active");
+    document.body.style.overflow = "hidden";
+    loadCode.style.display = "none";
+    checkCode.style.display = "initial";
+    }
+    else{
+      loadCode.style.display = "none";
+      errorCode.style.display = "block";
+      checkCode.style.display = "block";
+    }
+    if(inpMath.value == ""){
+      errorEmpty.style.display = "block"
+      errorCode.style.display = "none";
+    }
+  }
+})
+closeModal.addEventListener("click",function(){
+    modal.style.display = "none";
+    mainModal.classList.remove("active");
+    document.body.style.overflow = "initial";
+})
+showPass.addEventListener("click",function(){
+  if(inpMath.type === "password"){
+    showPass.classList.add("fa-eye-slash");
+    inpMath.focus();
+    inpMath.type = "text";
+  }
+  else{
+    showPass.classList.remove("fa-eye-slash");
+    inpMath.focus();
+    inpMath.type = "password";
+  }
+})
+
+// 
+
+madaraSub.addEventListener("click",function(){
+  loadM.style.display = "block";
+  checkM.style.display = "none";
+  setTimeout(checkPass, ranNum);
+  function checkPass(){
+  if(inpSi.value.toLowerCase() == "philo2004"){
+    madara.style.display = "flex";
+    madaraModal.classList.add("active");
+    document.body.style.overflow = "hidden";
+    loadM.style.display = "none";
+    checkM.style.display = "initial";
+    }
+    else{
+      loadM.style.display = "none";
+      errorC.style.display = "block";
+      checkM.style.display = "block";
+    }
+    if(inpSi.value == ""){
+      empty.style.display = "block"
+      errorC.style.display = "none";
+    }
+  }
+})
+closeMadara.addEventListener("click",function(){
+    madara.style.display = "none";
+    madaraModal.classList.remove("active");
+    document.body.style.overflow = "initial";
+})
+showP.addEventListener("click",function(){
+  if(inpSi.type === "password"){
+    showP.classList.add("fa-eye-slash");
+    inpSi.focus();
+    inpSi.type = "text";
+  }
+  else{
+    showP.classList.remove("fa-eye-slash");
+    inpSi.focus();
+    inpSi.type = "password";
+  }
+})
+
+// if(tabs[0])
+
+
+
+
+// الرياضيات
+ 
+// الفيزياء والكيمياء
+ 
+// علوم المهندس
+ 
+// الانجليزية
+ 
+// الفلسفة
+
+
+
+
+
+
+
+
+</script>
+</html>
+
+  

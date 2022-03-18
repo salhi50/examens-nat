@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<!-- id name: fluidTag  -->
+<html dir="ltr" lang="ar" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2BAC-SMB</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Font Awesome V4.7.0 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- Font Awesome V5.15.4 -->    
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/correct.css"/>
+    <!-- Framwork -->
+    <link rel="stylesheet" href="css/wspace.css">
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <!-- theme-color -->
+    <meta name="theme-color" content="#0f8cfa">
+  </head>
+  <style>
+      @media (min-width: 768px) {
+  header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; 
+  }
+}
+  </style>
+  <body>
+    <header class="bleu-bg pdy-15" dir="rtl">
+      <div class="container">
+        <ul class="flex flex-between fd-row-reverse align-center">
+          <li class="left-side">
+            <div class="logo"><a href="mainPage.html"><h3 class="w-color user-none" style="font-family: 'Poppins', sans-serif;">2BAC-SMB</h3></a></div>
+          </li>
+          <li class="right-side">
+            <!-- id name => sideMenu -->
+            <div class="bars-list s-hidden flex align-center justify-center cursor" id="sideMenu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="white" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+              </svg>
+            </div>
+            <div class="links s-visible d-hidden">
+              <div class="more cursor w-color relative d-none">
+                <div id="drop" class="user-none">
+                  <span class="mgl-4">المزيد</span>
+                  <i class="fa fa-chevron-down mgt-4" style="font-size: 12px;"></i>
+                </div>
+                <ul class="white-bg absolute tl-pos-initial index-3" id="dropMenu" style="display: none;">
+                  <li class="pdx-20 pdy-5"><a href="contact.html" class="text-ellipsis" style="color: #101013;">تواصل</a></li>
+                  <li class="pdx-20 pdy-5"><a href="about.html" class="text-ellipsis" style="color: #101013;">معلومات  غير مهمة</a></li>
+                </ul>
+              </div>
+              <a href="about.html" class="w-color fw-400 d-inblock about capital pdx-15">معلومات  غير مهمة</a>
+              <a href="contact.html" class="w-color fw-400 d-inblock contact capital pdx-15">تواصل</a>
+              <a href="eleve.html" class="w-color fw-400 d-inblock capital pdx-15">قائمة التلاميذ</a>
+              <a href="exam.html" class="w-color fw-400 d-inblock capital pdx-15">الامتحانات</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+      <div id="shadowContent" class="all-pos-initial s-hidden"></div>
+      <nav id="nav" class="white-bg cursor s-hidden text-left">
+        <i class="fa fa-close absolute" id="closeNav" style="font-size: 20px;"></i>
+        <ul>
+          <li class="logo pdl-20 pdy-20" style="font-family: 'Poppins', sans-serif !important;border-bottom: 1px solid #e9e9e9;"><h3><a style="color: #101013;" href="mainPage.html">2BAC-SMB</a></h3></li>
+          <li class="links" style="border-bottom: 1px solid #e9e9e9;">
+            <a href="exam.html" class="fw-400 d-block pdl-30 pdy-15">الامتحانات</a>
+            <a href="eleve.html" class="fw-400 d-block pdl-30 pdy-15">قائمة التلاميذ</a>
+            <a href="about.html" class="fw-400 d-block pdl-30 pdy-15">معلومات  غير مهمة</a>
+            <a href="contact.html" class="fw-400 d-block pdl-30 pdy-15">تواصل</a>
+          </li>
+          <li class="buttons pdy-20 pdx-15" dir="rtl">
+            <a href="https://github.com/salhi50?tab=repositories" class="btn rounded mgt-1rem" style="background: #f7f7f7;border: 1px solid #dadce0;" target="_blank">
+              <span style="font-family: 'Poppins', sans-serif;" class="pdl-15">Code</span>
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="src pdy-15 pdx-10" style="background: #deeefc;" dir="rtl">
+        <div class="container">
+            <a href="mainPage.html" style="color: #131313;" class="d-inblock p-small">الرئيسية</a> / 
+            <a href="eleve.html" style="color: #131313;" class="d-inblock p-small">قائمة التلاميذ</a>
+        </div>
+      </div>
+      <div class="thelist main-pdtb">
+        <div class="container">
+            <div class="list-control flex justify-center" dir="rtl">
+                <div class="main-content div-80 res-div-100">
+                    <div class="up-bar pdy-10" style="border-bottom: 1px solid #d1d7de;">
+                        <div class="child title"><h5>قائمة التلاميذ</h5></div>
+                    </div>
+                    <div class="search-bar full-width mgy-1h5rem flex align-center" style="height: 46px;">
+                        <div class="icon-search rounded flex align-center justify-center pdx-20" style="border: 1px solid #d1d4de;"><i class="fa fa-search" style="color: #393939;"></i></div>
+                        <div class="input-field rounded fl-1" style="border: 1px solid #d1d4de;">
+                            <input type="search" class="full-width" id="inpSearch" placeholder="إبحث باللغة العربية">
+                        </div>
+                    </div>
+                    <div class="list-eleves">
+                        <ul dir="rtl" class="rounded skip">
+                            <li class="bg-section pd-10 flex flex-between align-center" id="بنزرياح معاذ" style="border-top: 1px solid #dadce0;">
+                                <div class="ar-side">
+                                <span>1.</span>
+                                <span class="pdr-30" style="font-size: 17px;">بنزرياح معاذ</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="يعقوبي رجاء">
+                                <div class="ar-side">
+                                <span>2.</span>
+                                <span class="pdr-30" style="font-size: 17px;">يعقوبي رجاء</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="أيت فاسقي أمال">
+                                <div class="ar-side">
+                                <span>3.</span>
+                                <span class="pdr-30" style="font-size: 17px;">أيت فاسقي أمال</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="عيادي مريم">
+                                <div class="ar-side">
+                                <span>4.</span>
+                                <span class="pdr-30" style="font-size: 17px;">عيادي مريم</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex bg-section flex-between align-center" style="border-top: 1px solid #dadce0;" id="بوخشون نجلاء">
+                                <div class="ar-side">
+                                <span>5.</span>
+                                <span class="pdr-30" style="font-size: 17px;">بوخشون نجلاء</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="فاطمة الزهراء الأطوالي">
+                                <div class="ar-side">
+                                <span>6.</span>
+                                <span class="pdr-30" style="font-size: 17px;">فاطمة الزهراء الأطوالي</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="أنس القاضي">
+                                <div class="ar-side">
+                                <span>7.</span>
+                                <span class="pdr-30" style="font-size: 17px;">أنس القاضي</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="لخويل محمد">
+                                <div class="ar-side">
+                                <span>8.</span>
+                                <span class="pdr-30" style="font-size: 17px;">لخويل محمد</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="إدريسي عائشة">
+                                <div class="ar-side">
+                                <span>9.</span>
+                                <span class="pdr-30" style="font-size: 17px;">إدريسي عائشة</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="صباط رضى">
+                                <div class="ar-side">
+                                <span>10.</span>
+                                <span class="pdr-30" style="font-size: 17px;">صباط رضى</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="محمد علي الصالحي">
+                                <div class="ar-side">
+                                <span>11.</span>
+                                <span class="pdr-30" style="font-size: 17px;">محمد علي الصالحي</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="فطوشي أيمن">
+                                <div class="ar-side">
+                                <span>12.</span>
+                                <span class="pdr-30" style="font-size: 17px;">فطوشي أيمن</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="منصوري أمجد">
+                                <div class="ar-side">
+                                <span>13.</span>
+                                <span class="pdr-30" style="font-size: 17px;">منصوري أمجد</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="شتيوي عثمان">
+                                <div class="ar-side">
+                                <span>14.</span>
+                                <span class="pdr-30" style="font-size: 17px;">شتيوي عثمان</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="رياض علاء الدين">
+                                <div class="ar-side">
+                                <span>15.</span>
+                                <span class="pdr-30" style="font-size: 17px;">رياض علاء الدين</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="حمدوش محمد">
+                                <div class="ar-side">
+                                <span>16.</span>
+                                <span class="pdr-30" style="font-size: 17px;">حمدوش محمد</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="فيلالي مخلص سعد">
+                                <div class="ar-side">
+                                <span>17.</span>
+                                <span class="pdr-30" style="font-size: 17px;">فيلالي مخلص سعد</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="باخري ندى">
+                                <div class="ar-side">
+                                <span>18.</span>
+                                <span class="pdr-30" style="font-size: 17px;">باخري ندى</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="محفوض أسامة">
+                                <div class="ar-side">
+                                <span>19.</span>
+                                <span class="pdr-30" style="font-size: 17px;">محفوض أسامة</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="أفتيس أيوب">
+                                <div class="ar-side">
+                                <span>20.</span>
+                                <span class="pdr-30" style="font-size: 17px;">أفتيس أيوب</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="بزانو عثمان">
+                                <div class="ar-side">
+                                <span>21.</span>
+                                <span class="pdr-30" style="font-size: 17px;">بزانو عثمان</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="عروبي سهيلة">
+                                <div class="ar-side">
+                                <span>22.</span>
+                                <span class="pdr-30" style="font-size: 17px;">عروبي سهيلة</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="موساتي محمد">
+                                <div class="ar-side">
+                                <span>23.</span>
+                                <span class="pdr-30" style="font-size: 17px;">موساتي محمد</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="مساسي نوفل">
+                                <div class="ar-side">
+                                <span>24.</span>
+                                <span class="pdr-30" style="font-size: 17px;">مساسي نوفل</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="كنز طه">
+                                <div class="ar-side">
+                                <span>25.</span>
+                                <span class="pdr-30" style="font-size: 17px;">كنز طه</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="مروان عالمي مروني">
+                                <div class="ar-side">
+                                <span>26.</span>
+                                <span class="pdr-30" style="font-size: 17px;">مروان عالمي مروني</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="مستريح حفصة">
+                                <div class="ar-side">
+                                <span>27.</span>
+                                <span class="pdr-30" style="font-size: 17px;">مستريح حفصة</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="رزيقي يوسف">
+                                <div class="ar-side">
+                                <span>28.</span>
+                                <span class="pdr-30" style="font-size: 17px;">رزيقي يوسف</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="مفتوكي هبة">
+                                <div class="ar-side">
+                                <span>29.</span>
+                                <span class="pdr-30" style="font-size: 17px;">مفتوكي هبة</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="سترتاف بدر">
+                                <div class="ar-side">
+                                <span>30.</span>
+                                <span class="pdr-30" style="font-size: 17px;">سترتاف بدر</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                            <li class="pd-10 bg-section flex flex-between align-center" style="border-top: 1px solid #dadce0;" id="تسافي إدريسي أيوب">
+                                <div class="ar-side">
+                                <span>31.</span>
+                                <span class="pdr-30" style="font-size: 17px;">تسافي إدريسي أيوب</span>
+                                </div>
+                                <div class="list-info cursor" id="showInfo">
+                                    <i class="fa-solid fa-ellipsis mgl-half-1rem"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="error-not-found d-none" id="notFound">
+                        <div class="images-error-not-found  text-center div-100 res-div-100">
+                            <img src="imagess/noresu.gif" alt="">
+                        </div>
+                        <div class="title-error-not-found text-center p-mid fw-600" style="margin-top: -30px; color: #606060;font-size: 1.1rem;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal full-width all-pos-initial flex align-center justify-center d-none" id="modal">
+        <div class="cont-modal pdb-25 white-bg max-100 mgx-1rem rounded" style="border: 1px solid #dadce0;width: 500px; " id="mainmodal" dir="rtl">
+            <div class="top bg-section flex flex-between align-center" dir="rtl">
+                <h6 class="title">معلومات</h6>
+                <i id="closeModal" class="fa fa-close cursor" style="color: #3e3e3e;"></i>
+            </div>
+            <div class="body mgy-1rem pdx-15">
+                <div class="gender flex align-center justify-center"><i class="fa " style="color: #0f8cfa;"></i></div>
+                <ul class="info-list">
+                    <li class="p-small flex flex-between align-center pdy-10">
+                        <span class="one">الاسم</span>
+                        <span class="first" style="color: #606060;">ahmed salhi</span>
+                    </li>
+                    <li class="p-small flex flex-between align-center pdy-10">
+                        <span class="one">اللقب</span>
+                        <span class="second" style="color: #606060;">ahmed salhi</span>
+                    </li>
+                    <li class="p-small flex flex-between align-center pdy-10">
+                        <span class="one">المؤسسة</span>
+                        <span class="three" style="color: #606060;">إبن رشد</span>
+                    </li>
+                    <li class="p-small flex flex-between align-center pdy-10">
+                        <span class="one">القسم</span>
+                        <span class="four" style="color: #606060;font-family: 'Poppins', sans-serif;">2BAC-SMB</span>
+                    </li>
+                    <li class="p-small flex flex-between align-center pdy-10" style="border-bottom: 1px solid #dadce0;">
+                        <span class="one">الرقم الترتيبي</span>
+                        <span class="five" style="color: #606060;font-family: 'Poppins',sans-serif;">0</span>
+                    </li>
+                </ul>
+                <div class="rqq mgt-1h5rem p-xsmall pdx-15 pdy-10" style="background: var(--light-yellow);">
+                    <span class="fw-500">ملاحظة: </span>
+                    <span>أنا معارفش المعلومات ديال كل واحد ، هادي زدتشها من أجل التدرب عندك أي مشكل معجبكش الحال تكون سميتك هنا <a href="contact.html" style="color: #0f8cfa;text-decoration: underline;">برك هنا</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comments main-pdtb" style="background: #f1f1f1;" dir="rtl">
+        <div class="container" id="cont-comm">
+            <div class="title pdy-10 h3-mid" style="border-bottom: 1px solid #d1d4d7;"><h3 class="d-inblock">التعليقات</h3> (<span style="color: #606060;" id="numComm">0</span>)</div>
+                <div class="add-your-comment pdy-15">
+                    <a class="btn rounded  bleu-bg w-color res-div-100" id="blur">
+                        <i class="fa fa-plus"></i>
+                        <span>إضافة تعليق</span>
+                    </a>
+                </div>
+                <div class="main-comments" id="comments" dir="ltr" style="font-family: 'Poppins', sans-serif;">
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="modal full-width all-pos-initial flex align-center justify-center d-none" id="comm-modal">
+        <div class="cont-modal pdb-25 white-bg max-100 mgx-1rem rounded" style="border: 1px solid #dadce0;width: 500px; " id="mainComm" dir="rtl">
+            <div class="top bg-section flex flex-between align-center" dir="rtl">
+                <h6 class="title">إضافة تعليق</h6>
+                <i id="closeComm" class="fa fa-close cursor" style="color: #3e3e3e;"></i>
+            </div>
+            <div class="rqrq">
+                <p class="p-xsmall pd-15" style="color: #606060;">التعليق لن يتم حذفه</p>
+            </div>
+            <div class="body pdx-15" dir="ltr">
+                <div id="errorForm" class="pdy-5 d-none" style="color: red;">
+                    <i class="fa fa-exclamation-circle"></i>
+                    <span class="capital p-small mgl-4">make sure that you have fill all the inputs</span>
+                </div>
+                <input type="text" name="" style="height: 40px;" class="white-bg mgy-half-1rem full-width rounded" placeholder="your name" dir="ltr" id="testname">
+                <textarea id="testage" name="" dir="ltr" style="height: 80px;" class="full-width rounded" placeholder="your comment"></textarea>
+                <a id="subForm" class="btn full-width mgy-half-1rem rounded" style="color: #0f8cfa;background: var(--light-bleu);">
+                    <span class="btn-add">إضافة تعليق</span>
+                    <div id="loader" class="d-none"><div class="loading"></div></div>
+                </a>
+            </div>
+    </div>
+    </div>
+    <div class="rating main-pdtb white-bg">
+        <div class="container">
+          <h5 class="mgy-1h5rem text-center">هل كان هذا الموقع مفيدا</h5>
+          <div class="control-btns text-center" id="rate">
+            <div id="yes" class="d-inblock mgx-1rem cursor">
+              <span class="p-small" style="border-radius: 3px;padding: 1px 10px; border: 1px solid #e1e1e1; color: #0f8cfa;">نعم</span>
+            </div>
+            <div id="no" class="d-inblock mgx-1rem cursor">
+              <span class="p-small" style="border-radius: 3px;padding: 1px 18px; border: 1px solid #e1e1e1; color: #0f8cfa;">لا</span>
+            </div>
+          </div>
+          <div class="thanks text-center d-none" id="thank">
+            <span class="p-mid fw-500">.شكرا على تقييمك الرائع للموقع</span>
+          </div>
+          <div class="why-not mgx-auto max-100 d-none" id="why" style="width: 500px;">
+            <h5 dir="rtl" class="mgb-1rem">لما كان غير مفيدا؟</h5>
+            <form action="https://formspree.io/f/xnqwpajg" dir="rtl" method="post">
+              <ul class="rounded" style="border: 1px solid #e1e1e1;">
+                <li class="pdx-20 full-width pdy-10" style="border-bottom: 1px solid #e1e1e1;">
+                  <input type="checkbox" name="notUnderstand" id="check" class="checkbox">
+                  <label for="check" class="mgr-half-1rem p-mid">الموقع غير مفهوم</label>
+                </li>
+                <li class="pdx-20 full-width pdy-10" style="border-bottom: 1px solid #e1e1e1;">
+                  <input type="checkbox" name="hard" id="hardest" class="checkbox">
+                  <label for="hardest" class="mgr-half-1rem p-mid">الموقع صعب الاستعمال</label>
+                </li>
+                <li class="pdx-20 full-width pdy-10" style="border-bottom: 1px solid #e1e1e1;">
+                  <input type="checkbox" name="notEnough" id="enough" class="checkbox">
+                  <label for="enough" class="mgr-half-1rem p-mid">الامتحانات غير كافية</label>
+                </li>
+                <li class="pdx-20 full-width pdy-10" style="border-bottom: 1px solid #e1e1e1;">
+                  <input type="checkbox" name="errors" id="errror" class="checkbox">
+                  <label for="errror" class="mgr-half-1rem p-mid">الموقع به أخطاء</label>
+                </li>
+                <li class="pdx-20 full-width pdy-10">
+                  <input type="checkbox" name="others" id="othher" class="checkbox">
+                  <label for="otherh" class="mgr-half-1rem p-mid">شيء آخر، أترك رسالة فوق</label>
+                </li>
+              </ul>
+              <div class="sub full-width mgt-1rem"><input type="submit" value="إرسال" class="btn bleu-bg w-color rounded left-float" style="padding: 0 25px !important;"></div>
+              <div class="clear"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    <footer class="w-color long" id="foot" style="padding-top: 20px !important;padding-bottom: 60px;">
+        <div class="container">
+          <div class="social flex justify-center">
+            <a href="https://github.com/salhi50?tab=repositories" target="_blank"><i class="fab fa-github w-color"></i></a>
+          </div>
+          <div class="copy text-center mgt-1rem p-xsmall pdb-15" style="font-family: 'Poppins', sans-serif; color: #a8a8a8;">made by <i class="fa fa-heart mgx-4" style="color: #d34848;"></i> Salhi for 2BAC-SMB</div>
+        </div>
+      </footer>
+    </body>
+    <script>
+let dropDown = document.getElementById("drop");
+let dropMenu = document.getElementById("dropMenu");
+let sideMenu = document.getElementById("sideMenu");
+
+
+// drop dropDown menu
+
+dropDown.addEventListener("click",function(){
+    if(dropMenu.style.display === "none"){
+        dropMenu.style.display = "block";
+    }
+    else{
+        dropMenu.style.display = "none";
+    }
+})
+
+
+// navbar
+
+let nav = document.getElementById("nav");
+let closeNav = document.getElementById("closeNav");
+let shadowContent = document.getElementById("shadowContent");
+
+let modal = document.getElementById("modal");
+
+sideMenu.addEventListener("click",function(){
+    nav.style.left = "0";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    document.body.style.overflowY = "scroll";
+    document.body.style.height = "100%";
+    shadowContent.style.cssText = "visibility: visible;opacity: 1;"
+})
+closeNav.addEventListener("click",function(){
+    document.body.style.position = "initial";
+    document.body.style.width = "initial";
+    document.body.style.overflowY = "initial";
+    document.body.style.height = "initial";
+    nav.style.left = "-280px";
+    shadowContent.style.cssText = "visibility: hidden;opacity: 0;"
+})
+
+// start eleves
+
+let listEleves = document.querySelectorAll(".thelist .list-eleves ul li");
+let showModl = document.querySelectorAll(".thelist .list-eleves .list-info i");
+let mainModal = document.getElementById("mainmodal");
+
+let closeModal = document.getElementById("closeModal");
+
+closeModal.addEventListener("click",function(){
+    modal.style.display = "none";
+    mainModal.classList.remove("active");
+    document.body.style.overflow = "initial";
+})
+
+let firSpan = document.querySelector("#modal .cont-modal .body span.first");
+let secSpan = document.querySelector("#modal .cont-modal .body span.second");
+let thSpan = document.querySelector("#modal .cont-modal .body span.five");
+let gender = document.querySelector("#modal .cont-modal .body .gender i");
+
+// start change the text content
+
+showModl[0].addEventListener("click",function(){
+    firSpan.textContent = "معاذ";
+    secSpan.textContent = "بنزرياح";
+    thSpan.textContent = "01";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[1].addEventListener("click",function(){
+    firSpan.textContent = "رجاء";
+    secSpan.textContent = "يعقوبي";
+    thSpan.textContent = "02";
+    gender.classList.remove("fa-mars");
+    gender.classList.add("fa-venus");
+});
+showModl[2].addEventListener("click",function(){
+    firSpan.textContent = "أمال";
+    secSpan.textContent = "أيت فاسقي";
+    thSpan.textContent = "03";
+    gender.classList.remove("fa-mars");
+    gender.classList.add("fa-venus");
+});
+showModl[3].addEventListener("click",function(){
+    firSpan.textContent = "مريم";
+    secSpan.textContent = "عيادي";
+    thSpan.textContent = "04";
+    gender.classList.remove("fa-mars");
+    gender.classList.add("fa-venus");
+});
+showModl[4].addEventListener("click",function(){
+    firSpan.textContent = "نجلاء";
+    secSpan.textContent = "بوخشون";
+    thSpan.textContent = "05";
+    gender.classList.remove("fa-mars");
+    gender.classList.add("fa-venus");
+});
+showModl[5].addEventListener("click",function(){
+    firSpan.textContent = "فاطمة الزهراء";
+    secSpan.textContent = "الأطوالي";
+    thSpan.textContent = "06";
+    gender.classList.remove("fa-mars");
+    gender.classList.add("fa-venus");
+});
+showModl[6].addEventListener("click",function(){
+    firSpan.textContent = "أنس";
+    secSpan.textContent = "القاضي";
+    thSpan.textContent = "07";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[7].addEventListener("click",function(){
+    firSpan.textContent = "محمد";
+    secSpan.textContent = "لخويل";
+    thSpan.textContent = "08";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[8].addEventListener("click",function(){
+    firSpan.textContent = "عائشة";
+    secSpan.textContent = "إدريسي";
+    thSpan.textContent = "09";
+    gender.classList.remove("fa-mars");
+    gender.classList.add("fa-venus");
+});
+showModl[9].addEventListener("click",function(){
+    firSpan.textContent = "رضى";
+    secSpan.textContent = "صباط";
+    thSpan.textContent = "10";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[10].addEventListener("click",function(){
+    firSpan.textContent = "محمد علي";
+    secSpan.textContent = "الصالحي";
+    thSpan.textContent = "11";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[11].addEventListener("click",function(){
+    firSpan.textContent = "أيمن";
+    secSpan.textContent = "فطوشي";
+    thSpan.textContent = "12";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[12].addEventListener("click",function(){
+    firSpan.textContent = "أمجد";
+    secSpan.textContent = "منصوري";
+    thSpan.textContent = "13";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[13].addEventListener("click",function(){
+    firSpan.textContent = "عثمان";
+    secSpan.textContent = "شتيوي";
+    thSpan.textContent = "14";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[14].addEventListener("click",function(){
+    firSpan.textContent = "علاء الدين";
+    secSpan.textContent = "رياض";
+    thSpan.textContent = "15";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[15].addEventListener("click",function(){
+    firSpan.textContent = "محمد";
+    secSpan.textContent = "حمدوش";
+    thSpan.textContent = "16";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[16].addEventListener("click",function(){
+    firSpan.textContent = "سعد";
+    secSpan.textContent = "فيلالي مخلص";
+    thSpan.textContent = "17";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[17].addEventListener("click",function(){
+    firSpan.textContent = "ندى";
+    secSpan.textContent = "باخري";
+    thSpan.textContent = "18";
+    gender.classList.remove("fa-mars");
+    gender.classList.add("fa-venus");
+});
+showModl[18].addEventListener("click",function(){
+    firSpan.textContent = "أسامة";
+    secSpan.textContent = "محفوض";
+    thSpan.textContent = "19";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[19].addEventListener("click",function(){
+    firSpan.textContent = "أيوب";
+    secSpan.textContent = "أفتيس";
+    thSpan.textContent = "20";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[20].addEventListener("click",function(){
+    firSpan.textContent = "عثمان";
+    secSpan.textContent = "بزانو";
+    thSpan.textContent = "21";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[21].addEventListener("click",function(){
+    firSpan.textContent = "سهيلة";
+    secSpan.textContent = "عروبي";
+    thSpan.textContent = "22";
+    gender.classList.remove("fa-mars");
+    gender.classList.add("fa-venus");
+});
+showModl[22].addEventListener("click",function(){
+    firSpan.textContent = "محمد";
+    secSpan.textContent = "موساتي";
+    thSpan.textContent = "23";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[23].addEventListener("click",function(){
+    firSpan.textContent = "نوفل";
+    secSpan.textContent = "مساسي";
+    thSpan.textContent = "24";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[24].addEventListener("click",function(){
+    firSpan.textContent = "طه";
+    secSpan.textContent = "كنز";
+    thSpan.textContent = "25";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[25].addEventListener("click",function(){
+    firSpan.textContent = "مروان";
+    secSpan.textContent = "عالمي مروني";
+    thSpan.textContent = "26";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[26].addEventListener("click",function(){
+    firSpan.textContent = "حفصة";
+    secSpan.textContent = "مستريح";
+    thSpan.textContent = "27";
+    gender.classList.remove("fa-mars");
+    gender.classList.add("fa-venus");
+});
+showModl[27].addEventListener("click",function(){
+    firSpan.textContent = "يوسف";
+    secSpan.textContent = "رزيقي";
+    thSpan.textContent = "28";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[28].addEventListener("click",function(){
+    firSpan.textContent = "هبة";
+    secSpan.textContent = "مفتوكي";
+    thSpan.textContent = "29";
+    gender.classList.remove("fa-mars");
+    gender.classList.add("fa-venus");
+});
+showModl[29].addEventListener("click",function(){
+    firSpan.textContent = "بدر";
+    secSpan.textContent = "سترتاف";
+    thSpan.textContent = "30";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+showModl[30].addEventListener("click",function(){
+    firSpan.textContent = "أيوب";
+    secSpan.textContent = "تسافي إدريسي";
+    thSpan.textContent = "31";
+    gender.classList.add("fa-mars");
+    gender.classList.remove("fa-venus");
+});
+
+
+
+showModl.forEach(function(mod){
+    mod.addEventListener("click",function(){
+        modal.style.display = "flex";
+        mainModal.classList.add("active")
+        document.body.style.overflow = "hidden";
+    })
+})
+
+
+let arrList = Array.from(listEleves);
+
+function getIt(usa){
+    return usa.dataset.hidden === "hidden";
+}
+
+let notFound = document.getElementById("notFound");
+
+let inpSearch = document.getElementById("inpSearch");
+
+inpSearch.addEventListener("input",function(tar){
+    let value = tar.target.value;
+    listEleves.forEach(function(eleve){
+        if(eleve.id.includes(value)){
+            eleve.style.display = "flex";
+            eleve.removeAttribute("data-hidden");
+        }
+        else{
+            eleve.style.display = "none";
+            eleve.setAttribute("data-hidden", "hidden");
+        }
+    })
+    if(inpSearch.value === ""){
+        notFound.style.display = "none";
+    }
+    else if(inpSearch.value.split("").length >> "0" && arrList.every(getIt) === true){
+        notFound.style.display = "block";
+    }
+    else if(inpSearch.value.split("").length >> "0" && arrList.every(getIt) === false){
+        notFound.style.display = "none";
+    }
+})
+
+
+
+// start comments
+
+let parentComm = document.getElementById("cont-comm");
+
+arrtest = [
+    "jfsjf",
+    "jfdkfj",
+    "jdskdj",
+    "jdskdjfdsjf",
+    "fjdkf",
+    "jefkdj",
+    "jrdkj",
+    "fjskfj",
+    "fjdkf",
+    "fjdkfj",
+    "jfdf",
+    "jfdfjjfdf",
+    "jkfj",
+    "fdk",
+    "kjfdkjf",
+    "jfdkfj",
+    "jfdkfkdflfk",
+    "gkdlfk",
+    "kdflk",
+    "fkdslfk",
+    "hfjdhf",
+    "jfkdfj",
+    "jkrgjr",
+    "jfkdjf",
+    "jfkdfujf",
+    "jfdkjf",
+    "fkdfjdf",
+    "kjffj",
+    "jfdkfjd",
+    "kfdslfj",
+    "fjskdjf",
+    "kjfdskfj",
+    "fjkdfj",
+    "kfdfj",
+    "jfdkj",
+    "jfdkfj",
+    "jfdkfjfdfj",
+    "jfdkfjfdfjffg",
+    "jfdkfjfdfjffgfdf",
+    "jfdkfjfdfjffgfdfgg",
+    "jfdkfjfdfjffgfdfgglll",
+    "jfdkfjfdfjffgfdfgglllËË",
+    "jfdkfjfdfjffgfdfgglllËËË",
+    "jfdkfjfdfjffgfdfgglllËËËËË",
+    "jfdkfjfdfjffgfdfgglllËËËËË",
+    "jfdkfjfdfjffgfdfgglllËËËËËË",
+    "jfdkfjfdfjffgfdfgglllËËËËËË",
+    "jfdkfjfdfjffgfdfgglllËËËËËËÓ",
+    "jfdkfjfdfjffgfdfgglllËËËËËËÓÍ",
+    "jfdkfjfdfjffgfdfgglllËËËËËËÓÍ",
+    "jfdkfjfdfjffgfdfgglllËËËËËËgfgÓÍ",
+    "jfdkfjfdfjffgfdfgglllËËËËËËgfgfedÓÍ",
+    "jfdkfjfdfjffgfdfgglllËËËËËËgfgfedgÓÍ",
+    "jfdkfjfdfjffgfdfgglllËËËËËËgfgfedgrÓÍ",
+    "jfdkfjfdfjffgfdfgglllËËËËËËgfgfedgrgfÓÍ",
+    "jfdkfjfdfjffgfdfgglllËËËËËËgfgfedgrgffedfÓÍ",
+    "jfdkfjfdfjffgfdfgglllËËËËËËgfgfedgrgffedfgfdgÓÍ",
+    "jfdkfjfdfjffgfdfgglllËËËËËËgfgfedgrgffedfgfdgrtgÓÍ",
+    "fdfÓÍ",
+    "fdÓÍ",
+    "fdgdÓÍ",
+    "fdgdgdfdÓÍ",
+    "fdgdgdfdgrÓÍ",
+    "fdgdgdfdgrergÓÍ",
+    "fdgdgdfdgrerggerfgÓÍ",
+    "fdgdgdfdgrerggerfgfhedfÓÍ",
+    "fdgdgdfdgrerggerfgfhedffjkdjfÓÍ",
+    "fdgdgdfdgrerggerfgfhedffjkdjffdÓÍ",
+    "fdgdgdfdgrerggerfgfhedffjkdjffdjfkdfÓÍ",
+    "fdgdgdfdgrerggerfgfhedffjkdjffdjfkdfjskdjÓÍ",
+    "fdgdgdfdgrerggerfgfhedffjkdjffdjfkdfjskdjkjdsdjÓÍ",
+    "fdgdgdfdgrerggerfgfhedffjkdjffdjfkdfjskdjkjdsdjjfskfjÓÍ",
+    "fdgdgdfdgrerggerfgfhedffjkdjffdjfkdfjskdjkjdsdjjfskfjsfjdkdfhÓÍ",
+    "fdgdgdfdgrerggerfgfhedffjkdjffdjfkdfjskdjkjdsdjjfskfjsfjdkdfhdjkdsjfÓÍ",
+    "fndsjfhÓÍ",
+    "jfdkfjÓÍ",
+    "jfkfjÓÍ",
+    "jfkfkfdkjfjÓÍ",
+    "jfkdfjjÓÍ",
+    "jfkdfjfjdjfjÓÍ",
+    "nfsfjÓÍ",
+    "jfkdjfjÓÍ",
+    "jfkdjjffjjÓÍ",
+    "jfkdjjffjsfjkfjjÓÍ",
+    "fjkfjjÓÍ",
+    "jfdkfjjÓÍ",
+    "jfkdfjjÓÍ",
+    "vjjÓÍ",
+    "jfdkfjjÓÍ",
+    "fkdfj",
+    "fkdfj",
+    "jfdk",
+    "fkdfjjÓÍ",
+    "hfedfh",
+    "fjdfh",
+    "jfdkfj",
+    "jfdkfjfkdjf",
+    "djfkrfj",
+    "jfkdj",
+    "kfjdfj",
+    "zjdkjdf",
+    "zjdkjdkjfdjf",
+    "zjdkjdkjfdjkfkff",
+    "zjdkjdkjfdjkfkffgf",
+    "zjdkjdkjfdjkfkffgff",
+    "zjdkjdkjfdjkfkffgfff",
+    "zjdkjdkjfdjkfkffgffgf",
+    "zjdkjdkjfdjkfkffgffggf",
+    "zjdkjdkjfdjkfkffgffgggf",
+    "zjdkjdkjfdjkfkffgffggghf",
+    "zjdkjdkjfdjkfkffgffggggfhf",
+    "zjdkjdkjfdjkfkffgffggggfghf",
+    "zjdkjdkjfdjkfkffgffggggfgkihf",
+    "zjdkjdkjfdjkfkffgffggggfgkilhf",
+    "zjdkjdkjfdjkfkffgffggggfgkillhf",
+    "zjdkjdkjfdjkfkffgffggggfgkillohf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloohf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhghf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhnhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhnhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhnhjhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhnhjhjhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhnhjhjhhjhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhnhjhjhhjhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhnhjhjhhjhjhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhnhjhjhhjhjhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhnhjhjhhjhjhjhhf",
+    "zjdkjdkjfdjkfkffgffggggfgkilloojhbhgfghhjhjkuyhjhhhjkhhhhhhnhjhjhhjhjhjhjhf",
+    "jdkfjhf",
+    "jdkfjjhf",
+    "jdkfjjkjhf",
+    "jdkfjjkjkjhf",
+    "jdkfjjkjkjkhf",
+    "jdkfjjkjkjkjhf",
+    "jdkfjjkjkjkjjhf",
+    "jdkfjjkjkjkjjkhf",
+    "jdkfjjkjkjkjjkjhf",
+    "jdkfjjkjkjkjjkjkjhf",
+    "jdkfjjkjkjkjjkjkjjhf",
+    "jdkfjjkjkjkjjkjkjjjkhf",
+    "jdkfjjkjkjkjjkjkjjjkjhf",
+    "jdkfjjkjkjkjjkjkjjjkjkjhf",
+    "jdkfjjkjkjkjjkjkjjjkjkjikhf",
+    "jkjhf",
+    "jkjkkhf",
+    "jkjkkkkhf",
+    "jkjkkkkllhf",
+    "jkjkkkkllllhf",
+    "jkjkkkkllllkkhf",
+    "jkjkkkkllllkkkkhf",
+    "jkjkkkkllllkkkkkljhf",
+    "jkjkkkkllllkkkkkljkkhf",
+    "jkjkkkkllllkkkkkljkkjkhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhjkhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhjkjkjhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhjkjkjjkhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhjkjkjjkujËhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhjkjkjjkujËjkjhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhjkjkjjkujËjkjjkjhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhjkjkjjkujËjkjjkjjkhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhjkjkjjkujËjkjjkjjkjkjhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhjkjkjjkujËjkjjkjjkjkjjhhf",
+    "jkjkkkkllllkkkkkljkkjkjkjhjjkjkjkhjjhhjkjkjjkujËjkjjkjjkjkjjhnhjhhf",
+    "hjhhf",
+    "hjhkjhf",
+    "hjhkjkjhf",
+    "hjhkjkjkhf",
+    "hjhkjkjkjkhf",
+    "hjhkjkjkjkjihf",
+    "hjhkjkjkjkjijhkhf",
+    "hjhkjkjkjkjijhkklkhf",
+]
+
+
+let comments = document.getElementById("comments");
+
+let ranKey = arrtest[Math.floor(Math.random() * arrtest.length)];
+
+let testname = document.getElementById("testname")
+let testage = document.getElementById("testage");
+
+
+
+
+let numbers = [
+    "1000",
+    "2000",
+    "3000",
+    "1500",
+    "4000",
+    "5000",
+    "1800",
+    "3200",
+    "1300",
+]
+
+let ranNum = numbers[Math.floor(Math.random() * numbers.length)] ;
+
+let btnadd = document.querySelector(".btn-add")
+
+let addComm = document.getElementById("subForm");
+let loader = document.getElementById("loader");
+let addYour = document.getElementById("blur");
+let commModal = document.getElementById("comm-modal");
+let mainComm = document.getElementById("mainComm");
+let closeComm = document.getElementById("closeComm");
+let errorForm = document.getElementById("errorForm")
+
+addYour.addEventListener("click",function(){
+    commModal.style.display = "flex";
+    mainComm.classList.add("active");
+    document.body.style.overflow = "hidden";
+    testname.focus();
+});
+closeComm.addEventListener("click",function(){
+    commModal.style.display = "none";
+    mainComm.classList.remove("active");
+    document.body.style.overflow = "initial";
+    errorForm.style.display = "none";
+    testage.value = "";
+    testname.value = "";
+});
+
+
+
+
+addComm.addEventListener("click",function(){
+    loader.style.display = "block"
+    btnadd.style.display = "none";
+    setTimeout(loadBtn, ranNum);
+    function loadBtn(){
+        if(testname.value !== "" && testage.value !== ""){
+    let obj = {
+        name: testname.value,
+        age: testage.value,
+    }
+    let strobj = JSON.stringify(obj);
+    localStorage.setItem(ranKey, strobj);
+    location.hash = "comments";
+    location.reload();
+    }
+    else{
+        errorForm.style.display = "block";
+    }
+    loader.style.display = "none";
+    btnadd.style.display = "inline";
+    }
+
+})
+
+for(let y = 0; y < localStorage.length; y++){
+    let key = localStorage.key(y);
+    let val = JSON.parse(localStorage.getItem(key));
+    let allComments = document.querySelectorAll(".comments .comment")
+    comments.innerHTML += `<div class="comment">
+        <div class="info">
+        <h6>${val.name}</h6>
+        </div>
+        <p>${val.age}</p>    
+        </div>
+        </div>`;
+        let numComm = document.getElementById("numComm");
+        numComm.textContent = allComments.length + 1;
+}
+
+testage.addEventListener("focus",function(){
+    testage.style.borderColor = "#0f8cfa";
+})
+testage.addEventListener("blur",function(){
+    testage.style.borderColor = "#d1d4d7";
+})
+
+
+let yes = document.getElementById("yes");
+        let no = document.getElementById("no");
+        let rate = document.getElementById("rate");
+        let why = document.getElementById("why");
+
+        yes.addEventListener("click",function(){
+          const thank = document.getElementById("thank");
+          thank.classList.add("active");
+          rate.classList.add("d-none");
+        })
+        no.addEventListener("click",function(){
+          const why = document.getElementById("why");
+          why.classList.add("active");
+          rate.classList.add("d-none");
+        })
+
+
+
+
+
+
+</script>
+</html>

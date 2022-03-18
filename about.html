@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!-- id name: fluidTag  -->
+<html dir="ltr" lang="ar" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2BAC-SMB</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Font Awesome V4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome V5.15.4 -->    
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/correct.css"/>
+    <!-- Framwork -->
+    <link rel="stylesheet" href="css/wspace.css">
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <!-- theme-color -->
+    <meta name="theme-color" content="#0f8cfa">
+  </head>
+  <body>
+<header class="bleu-bg pdy-15" dir="rtl">
+    <div class="container">
+      <ul class="flex flex-between fd-row-reverse align-center">
+        <li class="left-side">
+          <div class="logo"><a href="mainPage.html"><h3 class="w-color user-none" style="font-family: 'Poppins', sans-serif;">2BAC-SMB</h3></a></div>
+        </li>
+        <li class="right-side">
+          <!-- id name => sideMenu -->
+          <div class="bars-list s-hidden flex align-center justify-center cursor" id="sideMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="white" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+            </svg>
+          </div>
+          <div class="links s-visible d-hidden">
+            <div class="more cursor w-color relative d-none">
+              <div id="drop" class="user-none">
+                <span class="mgl-4">المزيد</span>
+                <i class="fa fa-chevron-down mgt-4" style="font-size: 12px;"></i>
+              </div>
+              <ul class="white-bg absolute tl-pos-initial index-3" id="dropMenu" style="display: none;">
+                <li class="pdx-20 pdy-5"><a href="contact.html" class="text-ellipsis" style="color: #101013;">تواصل</a></li>
+                <li class="pdx-20 pdy-5"><a href="about.html" class="text-ellipsis" style="color: #101013;">معلومات  غير مهمة</a></li>
+              </ul>
+            </div>
+            <a href="about.html" class="w-color fw-400 d-inblock about capital pdx-15">معلومات  غير مهمة</a>
+            <a href="contact.html" class="w-color fw-400 d-inblock contact capital pdx-15">تواصل</a>
+            <a href="eleve.html" class="w-color fw-400 d-inblock capital pdx-15">قائمة التلاميذ</a>
+            <a href="exam.html" class="w-color fw-400 d-inblock capital pdx-15">الامتحانات</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="src pdy-15 pdx-10" style="background: #deeefc;" dir="rtl">
+    <div class="container">
+        <a href="mainPage.html" style="color: #131313;" class="d-inblock p-small">الرئيسية</a> / 
+        <a href="about.html" style="color: #131313;" class="d-inblock p-small">معلومات غير مهمة</a>
+    </div>
+  </div>
+    <div id="shadowContent" class="all-pos-initial s-hidden"></div>
+    <nav id="nav" class="white-bg cursor s-hidden text-left">
+      <i class="fa fa-close absolute" id="closeNav" style="font-size: 20px;"></i>
+      <ul>
+        <li class="logo pdl-20 pdy-20" style="font-family: 'Poppins', sans-serif !important;border-bottom: 1px solid #e9e9e9;"><h3><a style="color: #101013;" href="mainPage.html">2BAC-SMB</a></h3></li>
+        <li class="links" style="border-bottom: 1px solid #e9e9e9;">
+          <a href="exam.html" class="fw-400 d-block pdl-30 pdy-15">الامتحانات</a>
+          <a href="eleve.html" class="fw-400 d-block pdl-30 pdy-15">قائمة التلاميذ</a>
+          <a href="about.html" class="fw-400 d-block pdl-30 pdy-15">معلومات  غير مهمة</a>
+          <a href="contact.html" class="fw-400 d-block pdl-30 pdy-15">تواصل</a>
+        </li>
+        <li class="buttons pdy-20 pdx-15" dir="rtl">
+          <a href="https://github.com/salhi50?tab=repositories" class="btn rounded mgt-1rem" style="background: #f7f7f7;border: 1px solid #dadce0;" target="_blank">
+            <span style="font-family: 'Poppins', sans-serif;" class="pdl-15">Code</span>
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="info-about--me main-pdtb bg-section">
+        <div class="container">
+            <div dir="rtl" class="title mgb-1rem"><h3>معلومات غير مهمة</h3></div>
+            <div class="list-ctrl grid">
+                <div class="item white-bg rounded pd-15 text-center">
+                    <div class="img"><img src="imagess/pain.jpg" alt=""></div>
+                    <h5 class="mgy-1rem">الصالحي محمد علي</h5>
+                </div>
+                <div class="item white-bg rounded inner pdy-10 pdx-5">
+                    <ul dir="rtl">
+                        <li class="flex pdy-20 pdx-5 flex-between align-center" style="border-bottom: 1px solid #e1e1e1;">
+                            <span class="fw-500 boss">الاسم الكامل </span>
+                            <span class="fw-500 guide" style="color: #606060;">الصالحي محمد علي</span>
+                        </li>
+                        <li class="flex pdy-20 pdx-5 flex-between align-center" style="border-bottom: 1px solid #e1e1e1;">
+                            <span class="fw-500 boss">رقم الهاتف</span>
+                            <span class="fw-500 guide"  dir="ltr" style="color: #606060;">+212 675126359</span>
+                        </li>
+                        <li class="flex pdy-20 pdx-5 flex-between align-center">
+                            <span class="fw-500 boss">البريد الإلكتروني</span>
+                            <span class="fw-500 guide" dir="ltr" style="font-family: 'Poppins', sans-serif; color: #606060;">salhi8@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item white-bg rounded pd-15">
+                    <h6 class="mgb-6" dir="rtl">مهارات</h6>
+                    <ul style="font-family: 'Poppins', sans-serif;">
+                      <li class="pdy-10">
+                        <div class="label flex flex-between">
+                          <span class="fw-500 mgb-4" style="font-size: 12px;">html</span>
+                          <span class="fw-500 capital mgb-4" style="font-size: 12px;">90%</span>
+                        </div>
+                        <div class="progress full-width relative" style="height: 10px;"></div>
+                      </li>
+                      <li class="pdy-10">
+                        <div class="label flex flex-between">
+                          <span class="fw-500 mgb-4" style="font-size: 12px;">css</span>
+                          <span class="fw-500 capital mgb-4" style="font-size: 12px;">80%</span>
+                        </div>
+                        <div class="progress full-width relative css" style="height: 10px;"></div>
+                      </li>
+                      <li class="pdy-10">
+                        <div class="label flex flex-between">
+                          <span class="fw-500 mgb-4" style="font-size: 12px;">javascript</span>
+                          <span class="fw-500 capital mgb-4" style="font-size: 12px;">30%</span>
+                        </div>
+                        <div class="progress full-width relative js" style="height: 10px;"></div>
+                      </li>
+                      <li class="pdt-10">
+                        <div class="label flex flex-between">
+                          <span class="fw-500 mgb-4" style="font-size: 12px;">marketing</span>
+                          <span class="fw-500 capital mgb-4" style="font-size: 12px;">40%</span>
+                        </div>
+                        <div class="progress full-width mark relative js" style="height: 10px;"></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="item white-bg rounded pd-15">
+                    <h6 class="mgb-6" dir="rtl">لغات</h6>
+                    <ul>
+                      <li class="pdy-10">
+                        <div class="label flex flex-between">
+                          <span class="fw-500 mgb-4" style="font-size: 12px;">فرنسية</span>
+                          <span class="fw-500 capital mgb-4" style="font-size: 12px;">55%</span>
+                        </div>
+                        <div class="progress full-width relative fr" style="height: 10px;"></div>
+                      </li>
+                      <li class="pdy-10">
+                        <div class="label flex flex-between">
+                          <span class="fw-500 mgb-4" style="font-size: 12px;">إنجليزية</span>
+                          <span class="fw-500 capital mgb-4" style="font-size: 12px;">33%</span>
+                        </div>
+                        <div class="progress full-width relative en" style="height: 10px;"></div>
+                      </li>
+                      <li class="pdy-10">
+                        <div class="label flex flex-between">
+                          <span class="fw-500 mgb-4" style="font-size: 12px;">عربية</span>
+                          <span class="fw-500 capital mgb-4" style="font-size: 12px;">85%</span>
+                        </div>
+                        <div class="progress full-width relative ar" style="height: 10px;"></div>
+                      </li>
+                      <li class="pdt-10">
+                        <div class="label flex flex-between">
+                          <span class="fw-500 mgb-4" style="font-size: 12px;">ألمانية</span>
+                          <span class="fw-500 capital mgb-4" style="font-size: 12px;">8%</span>
+                        </div>
+                        <div class="progress full-width mark relative de" style="height: 10px;"></div>
+                      </li>
+                    </ul>
+                  </div>
+                <div class="item white-bg rounded pd-10 flex fd-col justify-center">
+                    <ul>
+                        <li class="flex flex-between align-center pdy-10 pdx-5" style="font-family: 'Poppins', sans-serif;border-bottom: 1px solid #e1e1e1;">
+                            <div class="left-sde fw-500">
+                                <i class="fab fa-facebook" style="color: #0f8cfa;"></i>
+                                <span class="p-small mgl-4">facebook</span>
+                            </div>
+                            <div class="right-sde fw-500">
+                                <span class="p-small" style="color: #606060;">Ssalhi Mohammed</span>
+                            </div>
+                        </li>
+                        <li class="flex flex-between align-center pdy-10 pdx-5" style="font-family: 'Poppins', sans-serif;border-bottom: 1px solid #e1e1e1;">
+                            <div class="left-sde fw-500">
+                                <i class="fab fa-instagram" style="color: #d15327;"></i>
+                                <span class="p-small mgl-4">Instagram</span>
+                            </div>
+                            <div class="right-sde fw-500">
+                                <span class="p-small" style="color: #606060;">Salhi_098</span>
+                            </div>
+                        </li>
+                        <li class="flex flex-between align-center pdy-10 pdx-5" style="font-family: 'Poppins', sans-serif;border-bottom: 1px solid #e1e1e1;">
+                            <div class="left-sde fw-500">
+                                <i class="fab fa-whatsapp" style="color: rgb(47, 181, 47);"></i>
+                                <span class="p-small mgl-4">whastapp</span>
+                            </div>
+                            <div class="right-sde fw-500">
+                                <span class="p-small" style="color: #606060;">0675126359</span>
+                            </div>
+                        </li>
+                        <li class="flex flex-between align-center pdy-10 pdx-5" style="font-family: 'Poppins', sans-serif;border-bottom: 1px solid #e1e1e1;">
+                            <div class="left-sde fw-500">
+                                <i class="fab fa-github" style="color: #3e3e3e;"></i>
+                                <span class="p-small mgl-4 capital">github</span>
+                            </div>
+                            <div class="right-sde fw-500">
+                                <span class="p-small" style="color: #606060;">salhi50</span>
+                            </div>
+                        </li>
+                        <li class="flex flex-between align-center pdy-10 pdx-5" style="font-family: 'Poppins', sans-serif;">
+                            <div class="left-sde fw-500">
+                                <i class="fa fa-envelope" style="color: #727272;"></i>
+                                <span class="p-small mgl-4 capital">Email</span>
+                            </div>
+                            <div class="right-sde fw-500">
+                                <span class="p-small" style="color: #606060;">salhi8@gmail.com</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tools main-pdtb white-bg">
+        <div class="container">
+            <div class="title mgb-1rem" dir="rtl"><h3>الأدوات المستعملة</h3></div>
+            <div class="list-ctrl flex flex-wrap justify-center align-center">
+                <div class="item mgx-1h5rem mgy-1h5rem max-100"><img src="imagess/threetol.png" style="width: 200px;" alt=""></div>
+                <div class="item mgx-1h5rem mgy-1h5rem max-100"><img src="imagess/visual.png" style="width: 200px;" alt=""></div>
+                <div class="item mgx-1h5rem mgy-1h5rem max-100"><img src="imagess/illusu.png" style="width: 70px; height: 70px;" alt=""></div>
+                <div class="item mgx-1h5rem mgy-1h5rem max-100"><img src="imagess/fontawa.jpg" style="width: 200px;" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <article class="main-pdtb white-bg" style="border-top: 1px solid #dadce0;" dir="rtl">
+      <div class="container">
+        <div class="title mgb-1rem" dir="rtl"><h3>بعض التساؤلات</h3></div>
+        <div class="qs pdy-10 relative fit-content mgb-1rem"><h5>ماهو html؟</h5></div>
+        <div class="answer">
+          <p class="p-mid pdb-20 fw-300 div-70 res-div-100"  style="color: #101013;line-height: 2;">
+            لغة HTML اتش تي ام ال، هي لغة النصوص التشعبية و بالإنجليزية Hypertext markup language
+أو كما تعرف بـ HTML ، هي اللغة التي تستخدم في إنشاء و تصميم صفحات   
+و مواقع الويب و تعتبر الهيكل الرئيسي لأي صفحة أو موقع على الويب.
+          </p>
+          <p class="p-mid pdb-10 fw-300 div-70 res-div-100"  style="color: #101013;line-height: 2;">
+            لا تعتبر لغة الـ HTML لغة برمجة و لكنها تستخدم في اعطاء الأوامر لمتصفح الإنترنت و ترشده
+فيها الي طريقة عرض الصور و الروابط و النصوص و الأشياء الأخري التي تحتويها الصفحة و أماكن عرض
+كل منها داخل الصفحة ، كما تقوم بإمداد المتصفح بالمعلومات الخاصة بالصفحة مثل عنوان الصفحة
+و وصفها و الكلمات الدلالية الخاصة بها
+          </p>
+        </div>
+        <div class="qs pdy-10 relative fit-content mgt-half-1rem mgb-1rem"><h5>ماهو css؟</h5></div>
+        <div class="answer">
+          <p class="p-mid pdb-20 fw-300 div-70 res-div-100"  style="color: #101013;line-height: 2;">
+            (CSS) هي اختصار لكلمة (Cascading Style Sheets) وهي عبارة عن تقنية ولغة تصميم بسيطة تهدف إلى تبسيط عملية جعل صفحات الويب متاحة؛ حيث أنها تحدد شكل لغة البرمجة (HTML)؛ 
+          </p>
+          <p class="p-mid pdb-20 fw-300 div-70 res-div-100"  style="color: #101013;line-height: 2;">
+            فهي تهتم بالخطوط والألوان والهوامش وتحديد العرض والارتفاع، وتتحكم بصور وخلفيات المواقع الإلكترونية، وتعد لغة (CSS)  صديقة للغة (HTML) حيث أنها مرافقة لها في تصميم وإنشاء صفحات الويب.
+          </p>
+        </div>
+        <div class="qs pdy-10 relative fit-content mgt-half-1rem mgb-1rem"><h5>فهم بالصور</h5></div>
+        <div class="answer div-80">
+          <div class="list-contrl">
+            <h6 style="color: #3c3c3c;" class="mgb-6">html</h6>
+            <div class="children mgb-half-1rem">
+              <img style="border-radius: 9px; border: 1px solid #dadce0;" src="imagess/htmlSyntax.jpg" alt="">
+            </div>
+            <div class="children mgb-half-1rem">
+              <h6 style="color: #3c3c3c;" class="mgb-6">css</h6>
+              <img src="imagess/cssSyntax.png" style="border-radius: 9px;" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="qs pdy-10 relative fit-content mgt-half-1rem mgb-1rem mgt-1rem"><h5>ماهي javascript ؟</h5></div>
+        <div class="answer">
+          <p class="p-mid pdb-20 fw-300 div-70 res-div-100"  style="color: #101013;line-height: 2;">
+            تعتبر لغة البرمجة JavaScript - إلى جانب كل من HTML و CSS - العمود الفقري لأي صفحة ويب حديثة، وكل التطبيقات والمنصات الإلكترونية التي نعرفها وندخل إليها كل يوم تعتمد بشكل كبير جدا عليها، حتى أن موقع مثل فيسبوك لا يعمل عند تعطيلها.
+          </p>
+          <p class="p-mid pdb-15 fw-300 div-70 res-div-100"  style="color: #101013;line-height: 2;">
+            جافا سكريبت هي لغة برمجة صممت في الأصل لإضافة مؤثرات وتفاعلات لصفحات الويب، ويعنى بالتفاعلات كل ما يتم عمله أو إجراؤه على مستوى المتصفح من دون الحاجة لإعادة تحميل الصفحة.على سبيل المثال:
+            <ul class="pdr-15">
+              <li class="pdy-5">- إخفاء أو إظهار عنصر HTML معين عند النقر على عنصر آخر.</li>
+              <li class="pdy-5">- التحقق من صحة البيانات في النماذج أو Form Validation</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </article>
+    <div class="memory bg-section main-pdtb" dir="rtl">
+      <div class="container">
+        <div class="title mgb-1rem" dir="rtl"><h3>فيديو للذكرى</h3></div>
+        <div class="video div-70 mgx-auto res-div-100 mgy-1h5rem">
+          <video src="video/recored.mp4" class="full-width" controls></video>
+        </div>
+        <div class="table">
+          <h6 class="mgb-1rem">عدد الأسطر الإجمالي لكل لغة</h6>
+          <table class="full-width">
+            <tr class="full-width" style="font-family: 'Poppins',sans-serif;">
+              <td style="color: #131313; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">html</td>
+              <td style="color: #131313; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">css</td>
+              <td style="color: #131313; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">javascript</td>
+            </tr>
+            <tr>
+              <td style="color: #0f8cfa; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">3750</td>
+              <td style="color: #0f8cfa; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">2720</td>
+              <td style="color: #0f8cfa; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">2300</td>
+            </tr>
+          </table>
+        </div>
+        <div class="info-plus mgt-1h5rem">
+          <h6 class="mgb-1rem">الوقت الذي إستغرقته للتعلم بالشهور</h6>
+          <table class="full-width">
+            <tr class="full-width" style="font-family: 'Poppins',sans-serif;">
+              <td style="color: #131313; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">html</td>
+              <td style="color: #131313; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">css</td>
+              <td style="color: #131313; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">javascript</td>
+              <td style="color: #131313; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">total</td>
+            </tr>
+            <tr dir="ltr">
+              <td style="color: #0f8cfa; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">1</td>
+              <td style="color: #0f8cfa; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">7</td>
+              <td style="color: #0f8cfa; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">3</td>
+              <td style="color: #0f8cfa; border: 1px solid #dadce0;" class="pdx-15 pdy-15 text-center fw-500">11</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer class="w-color" id="foot" style="padding-top: 20px !important;padding-bottom: 20px;">
+        <div class="container">
+          <div class="social flex justify-center">
+            <a href="https://github.com/salhi50?tab=repositories" target="_blank"><i class="fab fa-github w-color"></i></a>
+          </div>
+          <div class="copy text-center mgt-1rem p-xsmall pdb-15" style="font-family: 'Poppins', sans-serif; color: #a8a8a8;">made by <i class="fa fa-heart mgx-4" style="color: #d34848;"></i> Salhi for 2BAC-SMB</div>
+        </div>
+      </footer>
+</body>
+<script>
+    let dropDown = document.getElementById("drop");
+let dropMenu = document.getElementById("dropMenu");
+let sideMenu = document.getElementById("sideMenu");
+
+
+// drop dropDown menu
+
+dropDown.addEventListener("click",function(){
+    if(dropMenu.style.display === "none"){
+        dropMenu.style.display = "block";
+    }
+    else{
+        dropMenu.style.display = "none";
+    }
+})
+// navbar
+
+let nav = document.getElementById("nav");
+let closeNav = document.getElementById("closeNav");
+let shadowContent = document.getElementById("shadowContent");
+sideMenu.addEventListener("click",function(){
+    nav.style.left = "0";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    document.body.style.overflowY = "scroll";
+    document.body.style.height = "100%";
+    shadowContent.style.cssText = "visibility: visible;opacity: 1;"
+})
+closeNav.addEventListener("click",function(){
+    document.body.style.position = "initial";
+    document.body.style.width = "initial";
+    document.body.style.overflowY = "initial";
+    document.body.style.height = "initial";
+    nav.style.left = "-280px";
+    shadowContent.style.cssText = "visibility: hidden;opacity: 0;"
+})
+
+
+</script>
+</html>
